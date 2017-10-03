@@ -1,0 +1,199 @@
+body {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   margin: 0;
+   position: relative;
+   background-color: #bbcce8;
+   /* https://css-tricks.com/snippets/css/system-font-stack/ */
+   /* https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/ */
+   font-family: -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+   height: 3em;
+   background-color: #333;
+}
+
+header .row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+main {
+   margin: 0;
+   padding: 0;
+}
+
+main > section {
+   background-color: #fff;
+}
+
+footer {
+   background-color: red;
+}
+
+header a {
+   color: #fff;
+   text-decoration: none;
+}
+
+header a:hover {
+   color: #9be;
+   text-decoration: underline;
+}
+
+#platforms {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+#platforms img {
+   height: 1.5em;
+   padding: 1.5em 0.75em;
+}
+
+header ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+}
+
+header ul>li {
+   font-size: 1.5em;
+   text-transform: uppercase;
+   margin-right: 1em;
+}
+/*
+header a {
+   opacity: 0.7;
+   transition: opacity .3s;
+}
+header a:hover {
+   opacity: 1;
+}
+*/
+#hero {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   margin: 0;
+   height: 12em;
+   border-top: 1px solid #000;
+   background-color: #333;
+   background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23457' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+#hero section {
+   margin-top: 5.5em;
+   background-color: #fff;
+}
+
+#hero section .row {
+   display: flex;
+   align-items: flex-end;
+   flex-direction: row;
+   justify-content: space-between;
+   overflow: hidden;
+   height: 3.3em;
+}
+
+#hero section h1, #hero section h2 {
+   color: #457;
+   margin: 0;
+   padding: 0;
+   line-height: 1em;
+   letter-spacing: -0.05em;
+   flex-grow: 2;
+}
+
+#hero section h1 {
+   line-height: 0.9em;
+   font-size: 4em;
+   white-space: nowrap;
+   text-align: right;
+}
+
+#hero section h2 {
+   text-align: center;
+   margin-bottom: 0.1em;
+}
+
+#hero section .face-space {
+   height: 1em;
+}
+
+#face, #hero .face-space {
+   width: 16em;
+}
+
+#face {
+   top: 1.5em;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 8em;
+   border: 6px solid #fff;
+}
+
+table.experience {
+   border-collapse: collapse;
+}
+
+table.experience tr th, table.experience tr td {
+   padding: 0.5em 2em;
+   border-bottom: 1px solid #357;
+}
+
+table.experience td.note {
+   font-size: small;
+}
+
+/* Icons from https://simpleicons.org/ */
+
+/*
+.five-hundred-px, .facebook, .github, .gitlab, .linked-in {
+   transition: background-color 0.3s ease;
+}
+*/
+.five-hundred-px:hover {
+   background-color: #0099E5;
+}
+
+.facebook:hover {
+   background-color: #3B5998;
+}
+
+.github:hover {
+   background-color: #181717;
+}
+
+.gitlab:hover {
+   background-color: #E24329;
+}
+
+.linked-in:hover {
+   background-color: #0077B5;
+}
+
+.photoshop {
+   background-color: #00C8FF;
+}
+
+@media only screen and (min-width: 1024px) {
+   .row {
+      clear: both;
+      max-width: 1040px;
+      margin: 0 auto;
+   }
+}

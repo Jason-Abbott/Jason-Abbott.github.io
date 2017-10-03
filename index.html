@@ -1,24 +1,97 @@
-<html>
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-        <title>Jason Abbott</title>
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:site_name" content="Jason Abbott Portfolio" />
-        <meta name="description" property='og:description' content=""/>
-        <link href="/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
-        <link rel="icon" sizes="114x114" href="/img/launch-icon-114x114.png">
-        <link rel="apple-touch-icon" href='/img/launch-icon-57x57.png' />
-        <link rel="apple-touch-icon" sizes="72x72" href="/img/launch-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/img/launch-icon-114x114.png" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <style>
+<html lang="en">
+   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+      <title>Jason Abbott Portfolio</title>
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:site_name" content="Jason Abbott Portfolio" />
+      <meta name="description" property='og:description' content=""/>
+      <link href="/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+      <header>
+         <div class="row">
+            <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#anchor">Contact</a></li>
+               <li><a href="#anchor">Skills</a></li>
+            </ul>
+            <div id="platforms">
+               <a href="https://www.facebook.com/jason.e.abbott"><img src="facebook.svg" class="facebook"/></a>
+               <a href="https://www.linkedin.com/in/jasonabbott/"><img src="linkedin.svg" class="linked-in"/></a>
+               <a href="https://github.com/Jason-Abbott"><img src="github.svg" class="github"/></a>
+               <a href="https://gitlab.com/toba-tech"><img src="gitlab.svg" class="gitlab"/></a>
+               <a href="https://500px.com/trailimage"><img src="500px.svg" class="five-hundred-px"/></a>
+            </div>
+         </div>
+      </header>
+      <main>
+         <img id="face" src="face.jpg"/>
+         <div id="hero">
+            <section>
+               <div class="row">
+                  <h2>Full Stack Developer<br/>Senior Architect</h2>
+                  <div class="face-space"></div>
+                  <h1>Jason Abbott</h1>
+               </div>
+            </section>
+         </div>
 
-        </style>
-    </head>
-    <body>
+         <section>
+            <a name="about"></a>
+            <div class="row">
+               <ul>
+                  <li>Dirt-bike rider</li>
+                  <li>Father of four</li>
+                  <li>Photo enthusiast</li>
+                  <li>Sometimes a community photography class teacher</li>
+               </ul>
+            </div>
+         </section>
 
-    </body>
+         <section>
+            <a name="skills"></a>
+            <div class="row">
+               <table class="experience">
+                  <tr><th>Language</th><th>Years</th><th>Level</th><th>Notes</th></tr>
+                  <tr>
+                     <td>Go</td>
+                     <td class="years">2</td>
+                     <td class="level">Solid</td>
+                     <td class="note"></td>
+                  </tr><tr>
+                     <td>Javascript</td>
+                     <td class="years">23</td>
+                     <td class="level">Expert</td>
+                     <td class="note">Node and browser</td>
+                  </tr><tr>
+                     <td>C# and ASP.Net</td>
+                     <td class="years">12</td>
+                     <td class="level">Expert</td>
+                     <td class="note">Classic and MVC</td>
+                  </tr><tr>
+                     <td>Java</td>
+                     <td class="years">2</td>
+                     <td class="level">Intermediate</td>
+                     <td class="note">Android</td>
+                  </tr><tr>
+                     <td>SQL</td>
+                     <td class="years">20</td>
+                     <td class="level">Expert</td>
+                     <td class="note">T-SQL with two years of MySQL and PostgreSQL</td>
+                  </tr><tr>
+                     <td>PHP</td>
+                     <td class="years">2</td>
+                     <td class="level">Intermediate</td>
+                     <td class="note">Laravel and Yii</td>
+                  </tr>
+               </table>
+            </div>
+         </section>
+      </main>
+      <footer>
 
-    <h1>Full stack developer and sometimes designer</h1>
 
+      </footer>
+   </body>
 </html>
