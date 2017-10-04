@@ -1,10 +1,13 @@
 {
    "version": "2.0.0",
-   "tasks": [      
+   "tasks": [
       {
          "taskName": "Webpack",
          "command": "node_modules/.bin/webpack",
-         "type": "shell"
+         "type": "shell",
+         "problemMatcher": [
+            "$node-sass"
+         ]
       },
       {
          "taskName": "Webpack Watch",

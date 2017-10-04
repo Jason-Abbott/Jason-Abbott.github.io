@@ -1,21 +1,19 @@
-const source = "./src";
+const source = "./src/";
 const target = "./";
 const webpack = require("webpack");
 const path = require("path");
-const env = process.env.NODE_ENV || "development";
-const isProd = env === "production";
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { CheckerPlugin, TsConfigPathsPlugin } = require("awesome-typescript-loader");
 const context = path.join(__dirname, source);
 
 module.exports = {
    entry: {
-      app: "./src/app.tsx"
+      app: source + "app.tsx"
    },
    output: {
       path: path.join(__dirname, target),
-      filename: "js/[name].js",
-      publicPath: "/static/"
+      filename: target + "[name].js",
+      publicPath: "/"
    },
    module: {
       rules: [
@@ -49,43 +47,22 @@ module.exports = {
    },
    plugins: [
       new CheckerPlugin(),
-      /**
-       * Combine referenced CSS or SCSS into single file.
-         *
-         * https://github.com/webpack/extract-text-webpack-plugin
-         * https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points-commons-chunk-css-bundle
-         */
       new ExtractTextPlugin({
-         filename: "css/[name].css",
+         filename: "[name].css",
          allChunks: true
       }),
       new webpack.LoaderOptionsPlugin({
-         minimize: isProd,
-         debug: !isProd,
+         minimize: true,
+         debug: false,
          sassLoader: {
-            includePaths: [
-               path.resolve(__dirname, source + "/style"),
-               path.resolve(__dirname, target + "/fonts")
-            ]
+            includePaths: [ path.resolve(__dirname, source) ]
          }
       }),
-      // Create common chunk with all node_modules regardless of how often they"re
-      // used in other chunks
-      // https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
-      // new webpack.optimize.CommonsChunkPlugin({
-      //    name: "common",
-      //    minChunks: module =>
-      //       (typeof module.userRequest === "string") &&
-      //       module.userRequest.includes("node_modules")
-      // }),
-      // https://medium.com/webpack/webpack-3-official-release-15fd2dd8f07b
-      // https://medium.com/webpack/webpack-freelancing-log-book-week-5-7-4764be3266f5
-      // this plugin is preventing watcher from emitting correct bundles
       new webpack.optimize.ModuleConcatenationPlugin(),
       new webpack.SourceMapDevToolPlugin({
          test: [/\.js$/],
          exclude: [/common\./],
-         filename: "js/[name].js.map",
+         filename: target + "[name].js.map",
       }),
       new webpack.optimize.UglifyJsPlugin({
          compress: {
@@ -93,13 +70,13 @@ module.exports = {
             screw_ie8: true
          },
          // mangled variables are trouble for source maps
-         mangle: isProd,
+         mangle: false,
          output: { comments: false },
-         sourceMap: !isProd
+         sourceMap: true
       }),
       // production Node environment needed to trigger optimized React build
       new webpack.DefinePlugin({
-         "process.env.NODE_ENV": JSON.stringify("production") // JSON.stringify(process.env.NODE_ENV)
+         "process.env.NODE_ENV": JSON.stringify("production")
       })
    ]
 };
