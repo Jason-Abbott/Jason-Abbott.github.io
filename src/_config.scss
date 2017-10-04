@@ -1,18 +1,12 @@
 $navColor: rgb(69, 98, 69);
-$backgroundColor: #C2C1BA;
-$lightColor: desaturate(lighten($backgroundColor, 10%), 5%);
-$lightDisabledColor: desaturate(darken($lightColor, 10%), 5%);
-$darkColor: darken($backgroundColor, 15%);
-$darkerColor: darken($backgroundColor, 30%);
-$darkestColor: darken($backgroundColor, 50%);
-$darkDisabledColor: desaturate($darkColor, 3%);
-$highlightColor: #FF7B00;
+$backgroundColor: #bbcce8;
+
 $textColor: #222;
 $textOnDarkColor: #ddd;
 $trimColor: #bab698;
 $errorColor: #700;
 $linkColor: rgb(72, 110, 72);
-$space: 10px;
+
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $formFontSize: 30px;

@@ -14,7 +14,9 @@ export interface Props {
 
 export const Navbar = (props:Props) => <nav className="top"><Content>
    <ul>
-   { props.pageLinks.map(l => <li><a href={l.url}>{l.name}</a></li>)}
+   { props.pageLinks.map(l =>
+      <li><a href={l.url}>{l.name}</a></li>
+   )}
    </ul>
    <div id="platforms">
    { props.platforms.map(p =>

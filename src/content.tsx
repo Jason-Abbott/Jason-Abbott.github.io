@@ -1,3 +1,4 @@
+import "./content.scss";
 import * as React from "react";
 
 /**
