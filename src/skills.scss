@@ -6,25 +6,24 @@ section.skills {
       border-collapse: collapse;
 
       tr {
-         border-bottom: 1px solid #357;
-
          th, td {
             padding: 0.25em 1em;
+            border-bottom: 1px solid $darkColor;
          }
 
          th {
-            color: #357;
+            color: $darkColor;
             font-size: 1.5em;
             line-height: 1em;
             vertical-align: bottom;
          }
 
          td {
-            &:first-of-type {
+            &.icon {
                text-align: center;
                white-space: nowrap;
+               border-bottom: none;
             }
-
             &.name { font-size: larger; }
             &.years { text-align: right; }
             &.level {
@@ -60,7 +59,7 @@ section.skills {
             &.note { font-size: smaller; }
 
             img {
-               height: 50px;
+               height: 40px;
                margin-right: 5px;
             }
          }

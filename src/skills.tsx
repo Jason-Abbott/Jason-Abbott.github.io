@@ -1,6 +1,7 @@
 import "./skills.scss";
 import * as React from "react";
 import Section from "./section";
+const levels = [1, 2, 3, 4, 5];
 
 export interface Skill {
    icons:string[];
@@ -24,10 +25,12 @@ export const Skills = (props:Props) => <Section className="skills">
       </tr>
    { props.skills.map(s =>
       <tr>
-         <td>icons</td>
+         <td className="icon">{s.icons.map(i => <img src={"./img/" + i}/>)}</td>
          <td className="name">{s.name}</td>
          <td className="years">{s.years}</td>
-         <td className="level">{s.level}</td>
+         <td className="level">
+            <ul>{ levels.map(l => <li className={s.level >= l ? null : "off"}/> )}</ul>
+         </td>
          <td className="note">{s.note}</td>
       </tr>
    )}
