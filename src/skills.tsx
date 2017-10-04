@@ -20,7 +20,7 @@ export const Skills = (props:Props) => <Section className="skills">
       <tr>
          <th colSpan={2}>Language or Platform</th>
          <th>Years</th>
-         <th>Skill Level</th>
+         <th>Expertise</th>
          <th>Notes</th>
       </tr>
    { props.skills.map(s =>
@@ -29,7 +29,7 @@ export const Skills = (props:Props) => <Section className="skills">
          <td className="name">{s.name}</td>
          <td className="years">{s.years}</td>
          <td className="level">
-            <ul>{ levels.map(l => <li className={s.level >= l ? null : "off"}/> )}</ul>
+            <ul>{ levels.map(l => <li className={s.level >= l ? "on" : null}/> )}</ul>
          </td>
          <td className="note">{s.note}</td>
       </tr>

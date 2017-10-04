@@ -1,6 +1,7 @@
 $backgroundColor: #bbcce8;
 $darkColor: #357;
 $lightColor: #9be;
+$slateColor: #333;
 
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -9,10 +10,13 @@ $formBackColor: #eee;
 
 // https://css-tricks.com/snippets/css/system-font-stack/
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-$sanSerifFont: -apple-system, BlinkMacSystemFont,
+$sanSerifFont: "Dosis", "Ubuntu", "Open Sans",
+   -apple-system, BlinkMacSystemFont,
    "Segoe UI", "Roboto", "Oxygen",
    "Ubuntu", "Cantarell", "Fira Sans",
    "Droid Sans", "Helvetica Neue", sans-serif;
+
+$titleFont: "Patua One", "Anton", $sanSerifFont;
 
 @mixin phone {
    @media (max-width: #{$tablet-width - 1px}) {

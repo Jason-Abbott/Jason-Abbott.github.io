@@ -2,17 +2,19 @@
 
 section.skills {
    table {
-      margin: 2em 0;
+      margin: 2rem 0;
       border-collapse: collapse;
 
       tr {
          th, td {
-            padding: 0.25em 1em;
+            padding: 0.25rem 1rem;
             border-bottom: 1px solid $darkColor;
          }
 
          th {
             color: $darkColor;
+            font-family: $titleFont;
+            font-weight: normal;
             font-size: 1.5em;
             line-height: 1em;
             vertical-align: bottom;
@@ -24,7 +26,10 @@ section.skills {
                white-space: nowrap;
                border-bottom: none;
             }
-            &.name { font-size: larger; }
+            &.name {
+               font-size: larger;
+               white-space: nowrap;
+            }
             &.years { text-align: right; }
             &.level {
                text-align: center;
@@ -40,32 +45,36 @@ section.skills {
                      margin: 0;
                      text-indent: 0;
                      display: inline-block;
-                     width: 1em;
-                     height: 1em;
+                     width: 1rem;
+                     height: 1rem;
                      border: 1px solid #000;
                      border-left: none;
-                     background-color: #6FE96F;
+
+                     &.on {
+                        background-color: rgba(0, 255, 0, 0.3);
+                     }
 
                      &:first-of-type {
                         border-left: 1px solid #000;
                      }
 
-                     &.off {
-                        background: none;
-                     }
                   }
                }
             }            
-            &.note { font-size: smaller; }
+            &.note { font-size: 1rem; }
 
             img {
-               height: 40px;
-               margin-right: 5px;
+               height: 2rem;
+               margin-right: 1rem;
             }
          }
 
          &:hover {
             background-color: #fff;
+
+            td.level ul li.on {
+               background-color: rgba(0, 255, 0, 1);
+            }
          }
       }
    }

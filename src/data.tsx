@@ -76,7 +76,7 @@ export const skills:Skill[] = [
       level: 3,
       note: "Laravel and Yii."
    }, {
-      icons: ["angular.png"],
+      icons: ["angular.svg"],
       name: "Angular",
       years: 4,
       level: 3,
@@ -99,7 +99,7 @@ export const skills:Skill[] = [
       level: 3,
       note: "Created and manage RDS and EC2 instances and their security groups."
    }, {
-      icons: ["azure.svg"],
+      icons: ["azure.png"],
       name: "Azure",
       years: 2,
       level: 3,
