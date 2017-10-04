@@ -1,6 +1,6 @@
 import "./about.scss";
 import * as React from "react";
-import Content from "./content";
+import Section from "./section";
 
 export interface Item {
    title:string;
@@ -8,7 +8,6 @@ export interface Item {
 }
 
 interface Props {
-   className:string;
    list:Item[];
    columns:number;
 }
@@ -17,17 +16,21 @@ export const About = (props:Props) => {
    if (props.list.length == 0) { return null; }
    if (props.columns < 1) { props.columns = 1; }
 
-   const size = props.list.length / props.columns;
+   const columns:JSX.Element[] = [];
+   const perColumn = Math.round(props.list.length / props.columns);
 
-   console.log(size);
-
-
-   return <section className={props.className}><Content>
-      <dl>
-      { props.list.map(i => [
-         <dt>{i.title}</dt>,
-         <dd dangerouslySetInnerHTML={i}></dd>
-      ])}
-      </dl>
-   </Content></section >;
+   for (let i = 0; i < props.columns; i++) {
+      const start = i * perColumn;
+      columns.push(dict(props.list.slice(start, start + perColumn)));
+   }
+   return <Section className="about">{columns}</Section>;
 };
+
+const dict = (items:Item[]) => <dl>
+   { items.map(i => [
+      <dt>{i.title}</dt>,
+      <dd dangerouslySetInnerHTML={i}></dd>
+   ])}
+</dl>;
+
+export default About;

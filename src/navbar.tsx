@@ -24,3 +24,5 @@ export const Navbar = (props:Props) => <nav className="top"><Content>
    )}
    </div>
 </Content></nav>;
+
+export default Navbar;
