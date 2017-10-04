@@ -19,7 +19,7 @@ module.exports = {
       rules: [
          {
             test: /\.tsx?$/,
-            exclude: [/node_modules/, /test\.tsx?$/, /src\/types\//],
+            exclude: [/node_modules/],
             loader: ["awesome-typescript-loader"]
          },
          // Extract CSS and SASS imports into separate combined files.
@@ -35,14 +35,14 @@ module.exports = {
          },
          // Do not bundle image references but leave them as regular URLs.
          {
-            test: /\.(jpg|jpeg|gif|png)$/,
+            test: /\.(jpg|jpeg|gif|png|svg)$/,
             exclude: /node_modules/,
             use: "url-loader?limit=1024&name=img/[name].[ext]"
          }
       ]
    },
    resolve: {
-      extensions: [".js", ".ts", ".tsx", ".json", ".sass"],
+      extensions: [".js", ".ts", ".tsx", ".json", ".scss"],
       plugins: [new TsConfigPathsPlugin()]
    },
    plugins: [

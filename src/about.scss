@@ -1,0 +1,27 @@
+@import "config";
+
+section.about {
+   .content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+   }
+
+   dl {
+      display: block;
+      margin: 0.5em 1em 1.5em 1em;
+   
+      dt {
+         color: #457;
+         font-weight: bold;
+         font-size: larger;
+         margin-top: 0.5em;
+      }
+
+      dd {
+         line-height: 1em;
+         font-size: larger;
+         font-style: italic;
+      }
+   }
+}

@@ -1,0 +1,67 @@
+@import "config";
+
+table.experience {
+   margin: 2em 0;
+   border-collapse: collapse;
+}
+
+table.experience tr {
+   border-bottom: 1px solid #357;
+}
+
+table.experience tr th {
+   color: #357;
+   font-size: 1.5em;
+   line-height: 1em;
+   vertical-align: bottom;
+}
+
+table.experience tr th, table.experience tr td {
+   padding: 0.25em 1em;
+}
+
+table.experience td.name { font-size: larger; }
+table.experience td.years { text-align: right; }
+table.experience td.level { text-align: center; }
+table.experience td.note { font-size: smaller; }
+
+table.experience tr:hover {
+   background-color: #fff;
+}
+
+table.experience td img {
+   height: 50px;
+   margin-right: 5px;
+}
+
+table.experience td.level ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   white-space: nowrap;
+}
+
+table.experience td.level ul li {
+   padding: 0;
+   margin: 0;
+   text-indent: 0;
+   display: inline-block;
+   width: 1em;
+   height: 1em;
+   border: 1px solid #000;
+   border-left: none;
+   background-color: #6FE96F;
+}
+
+table.experience td.level ul li.off {
+   background: none;
+}
+
+table.experience td.level ul li:first-of-type {
+   border-left: 1px solid #000;
+}
+
+table.experience td:first-of-type {
+   text-align: center;
+   white-space: nowrap;
+}

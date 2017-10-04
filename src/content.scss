@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1024px) {
+   .content {
+      max-width: 1040px;
+      margin: 0 auto;
+   }
+}
+
+@media only screen and (max-width: 1023px) {
+   .content {
+      max-width: none;
+      margin: 0;
+   }
+}

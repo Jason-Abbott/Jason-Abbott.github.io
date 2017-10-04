@@ -1,18 +1,12 @@
 {
-  "name": "@toba/platform",
+  "name": "jason-abbott-portfolio",
   "description": "Jason Abbott Portfolio",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Jason Abbott"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "scripts": {
-    "test": "node_modules/.bin/mocha --recursive"
-  },
   "devDependencies": {
     "@types/es6-promise": "^0.0.33",
     "@types/react": "^16.0.0",
@@ -40,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/toba-tech/platform"
+    "url": "https://github.com/Jason-Abbott/Jason-Abbott.github.io"
   },
   "main": "index",
   "bugs": {
-    "url": "https://gitlab.com/toba-tech/platform/issues"
+    "url": "https://github.com/Jason-Abbott/Jason-Abbott.github.io/issues"
   }
 }

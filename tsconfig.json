@@ -8,7 +8,7 @@
       // cannot be true because that blocks mocha, React and others
       "noUnusedLocals": false,
       "noUnusedParameters": false,
-      "outDir": "./static",
+      "outDir": "./",
       "sourceMap": true,
       "allowJs": false,
       "removeComments": true,
@@ -19,22 +19,9 @@
       "forceConsistentCasingInFileNames": true,
       "jsx": "react",
       "lib": ["dom", "es2015"],
-      "typeRoots": ["./node_modules/@types", "./src/types"],
-      // https://www.typescriptlang.org/docs/handbook/module-resolution.html
-      // https://github.com/Microsoft/TypeScript/issues/5039
-      "baseUrl": ".",
-      "paths": {
-         "lib/*": ["./lib/*"],
-         "modules/*": ["./modules/*"],
-         "jsx/*": ["./components/*"],
-         "state/*": ["./lib/state/*"]
-      }
+      "typeRoots": ["./node_modules/@types"],
+      "baseUrl": "."
    },
-   "include": [
-      "./src/**/*.ts",
-      "./components/**/*.ts*"
-   ],
-   "exclude": [
-      "./node_modules/"
-   ]
+   "include": ["./src/**/*.ts"],
+   "exclude": ["./node_modules/"]
 }

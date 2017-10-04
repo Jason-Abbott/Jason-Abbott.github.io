@@ -1,0 +1,50 @@
+@import "common";
+@import "brands";
+
+nav.top {
+   height: 3em;
+   background-color: #333;
+   
+   .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+   }
+
+   a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+         color: #9be;
+         text-decoration: underline;
+      }
+   }
+
+   #platforms {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+         height: 1.5em;
+         padding: 1.5em 0.75em;
+      }
+   }
+
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+
+      >li {
+         font-size: 1.5em;
+         text-transform: uppercase;
+         margin-right: 1em;
+      }      
+   }
+}
