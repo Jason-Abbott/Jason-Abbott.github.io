@@ -1,0 +1,39 @@
+{
+   "version": "2.0.0",
+   "tasks": [      
+      {
+         "taskName": "Webpack",
+         "command": "node_modules/.bin/webpack",
+         "type": "shell"
+      },
+      {
+         "taskName": "Webpack Watch",
+         "command": "node_modules/.bin/webpack --watch --display-error-details",
+         "type": "shell",
+         "group": "build",
+         "problemMatcher": [
+            "$tsc-watch"
+         ],
+         "presentation": {
+            "echo": true,
+            "reveal": "always",
+            "focus": false,
+            "panel": "dedicated"
+         }
+      },
+      {
+         "taskName": "Test TypeScript",
+         "options": {
+            "env": {
+               "TS_NODE_COMPILER_OPTIONS": "{\"module\": \"commonjs\", \"target\": \"es5\"}"
+            }
+         },
+         "command": "node_modules/.bin/mocha --compilers ts:ts-node/register,tsx:ts-node/register --require ts-node/register --require ignore-styles --require tsconfig-paths/register ./**/*.test.ts*",
+         "type": "shell",
+         "group": "test",
+         "problemMatcher": [
+            "$tsc"
+         ]
+      }
+   ]
+}
