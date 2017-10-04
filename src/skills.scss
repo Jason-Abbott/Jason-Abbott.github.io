@@ -1,82 +1,119 @@
 @import "config";
+@import "mixins";
 
-section.skills {
-   table {
-      margin: 2rem 0;
-      border-collapse: collapse;
+section.skills .content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 
-      tr {
-         th, td {
-            padding: 0.25rem 1rem;
-            border-bottom: 1px solid $darkColor;
-         }
+   h1 {
+      font-size: 2rem;
+      white-space: nowrap;
+   }
 
-         th {
-            color: $darkColor;
-            font-family: $titleFont;
-            font-weight: normal;
-            font-size: 1.5em;
-            line-height: 1em;
-            vertical-align: bottom;
-         }
+   .leadership {
+      flex-basis: 40%;
+      margin-left: 1rem;
+   }
 
-         td {
-            &.icon {
-               text-align: center;
-               white-space: nowrap;
-               border-bottom: none;
+   .technical {
+      flex-basis: 55%;
+
+      table {
+         margin: 2rem 0;
+         border-collapse: collapse;
+
+         tr {
+            border-bottom: 1px solid $titleColor;
+
+            th, td {
+               padding: 0.25rem 0.5rem;               
+               &.note { width: 33%; }
             }
-            &.name {
-               font-size: larger;
-               white-space: nowrap;
-            }
-            &.years { text-align: right; }
-            &.level {
-               text-align: center;
-               
-               ul {
-                  list-style: none;
-                  padding: 0;
-                  margin: 0;
-                  white-space: nowrap;
 
-                  li {
+            th {
+               color: $titleColor;
+               font-family: $titleFont;
+               font-weight: normal;
+               font-size: 1.2rem;
+               vertical-align: bottom;
+
+               @include phone { font-size: 1rem; }
+            }
+
+            td {               
+               &.name {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  p {
+                     display: block;
+                     font-size: larger;
+                     white-space: nowrap;
                      padding: 0;
                      margin: 0;
-                     text-indent: 0;
-                     display: inline-block;
-                     width: 1rem;
-                     height: 1rem;
-                     border: 1px solid #000;
-                     border-left: none;
+                  }
 
-                     &.on {
-                        background-color: rgba(0, 255, 0, 0.3);
+                  >div {                     
+                     img {
+                        height: 2rem;
+                        margin-left: 0.5rem;
                      }
+                  }
 
-                     &:first-of-type {
-                        border-left: 1px solid #000;
-                     }
-
+                  @include phone {
+                     p { font-size: 1rem; }
+                     img { height: 1rem; }
                   }
                }
-            }            
-            &.note { font-size: 1rem; }
+               &.years { text-align: right; }
+               &.level {
+                  text-align: center;
+                  
+                  ul {
+                     list-style: none;
+                     padding: 0;
+                     margin: 0;
+                     white-space: nowrap;
 
-            img {
-               height: 2rem;
-               margin-right: 1rem;
+                     li {
+                        padding: 0;
+                        margin: 0;
+                        text-indent: 0;
+                        display: inline-block;
+                        width: 0.75rem;
+                        height: 1rem;
+                        border: 1px solid #000;
+                        border-left: none;
+
+                        @include phone {
+                           width: 0.5rem;
+                        }
+
+                        &.on {
+                           background-color: rgba(0, 255, 0, 0.3);
+                        }
+
+                        &:first-of-type {
+                           border-left: 1px solid #000;
+                        }
+
+                     }
+                  }
+               }            
+               &.note { font-size: 1rem; }
             }
-         }
 
-         &:hover {
-            background-color: #fff;
+            &:hover {
+               background-color: #ffd;
 
-            td.level ul li.on {
-               background-color: rgba(0, 255, 0, 1);
+               td.level ul li.on {
+                  background-color: rgba(0, 255, 0, 1);
+               }
             }
          }
       }
    }
 }
-

@@ -4,10 +4,11 @@ import * as ReactDOM from "react-dom";
 import Section from "./section";
 import Navbar from "./navbar";
 import About from "./about";
+import Portfolio from "./portfolio";
 import Skills from "./skills";
 import { about, platforms, pageLinks, skills } from "./data";
 
-const App = () => <div>
+const App = ()=> <div>
    <Navbar platforms={platforms} pageLinks={pageLinks} />
    <img id="face" src="./img/face.jpg"/>
    <div id="hero">
@@ -17,6 +18,7 @@ const App = () => <div>
       </Section>
    </div>
    <About columns={2} list={about}/>
+   <Portfolio/>
    <Skills skills={skills}/>
 </div>;
 

@@ -1,0 +1,7 @@
+@import "config";
+@import "mixins";
+
+section.portfolio {
+   background-color: $backgroundColor;
+   color: #fff;
+}

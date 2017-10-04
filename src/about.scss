@@ -5,22 +5,30 @@ section.about {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
+
+      @include tablet {
+         align-items: flex-start;
+      }
    }
 
    dl {
       display: block;
       margin: 0.5em 1em 1.5em 1em;
+
+      @include tablet {
+         width: 50%;
+      }
    
       dt {
-         color: $darkColor;
+         color: $titleColor;
          font-family: $titleFont;
-         font-size: 1.3em;
+         font-size: 1em;
          margin-top: 0.5em;
       }
 
       dd {
          line-height: 1em;
-         font-size: 1.2em;
+         font-size: 1em;
       }
    }
 }

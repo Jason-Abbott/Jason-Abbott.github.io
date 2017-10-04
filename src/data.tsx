@@ -16,7 +16,7 @@ export const platforms:Link[] = [
 
 export const pageLinks:Link[] = [
    { name: "About", url: "#about" },
-   { name: "Contact", url: decode(email) },
+   { name: "Contact", url: email }, //decode(email) },
    { name: "Skills", url: "#skills" }
 ];
 
@@ -25,7 +25,7 @@ export const about:Item[] = [
    { title: "Father of four", __html: "It&rsquo;s safe &mdash; two are in other countries." },
    { title: "Mediocre travel writer", __html: "I have <a href=\"http://www.trailimage.com\">this blog</a>, you see &hellip;" },
    { title: "Keeper of a pond", __html: "Koi are demanding and blue heron are rude." },
-   { title: "Photo enthusiast", __html: "I still have prints in the garage left over from what I sold at the farmers market. Five years ago. Want one?" }
+   { title: "Photo enthusiast", __html: "I still have prints in the garage left over from the farmers market &hellip; five years ago. Want one?" }
 ];
 
 export const skills:Skill[] = [
@@ -79,8 +79,8 @@ export const skills:Skill[] = [
       icons: ["angular.svg"],
       name: "Angular",
       years: 4,
-      level: 3,
-      note: "Perhaps my expertise is better than suggested. I only know it too often makes me want to pull my hair out."
+      level: 3
+      //note: "Perhaps my expertise is better than suggested. I only know it too often makes me want to pull my hair out."
    }, {
       icons: ["css3.png"],
       name: "CSS, SASS, LESS",
@@ -91,7 +91,7 @@ export const skills:Skill[] = [
       name: "Perl",
       years: 4,
       level: 3,
-      note: "That was a long time ago. Times were simple then."
+      note: "That was a long time ago. Life was simple then."
    }, {
       icons: ["aws.svg"],
       name: "AWS",

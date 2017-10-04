@@ -16,25 +16,39 @@ interface Props {
 }
 
 export const Skills = (props:Props) => <Section className="skills">
-   <table>
-      <tr>
-         <th colSpan={2}>Language or Platform</th>
-         <th>Years</th>
-         <th>Expertise</th>
-         <th>Notes</th>
-      </tr>
-   { props.skills.map(s =>
-      <tr>
-         <td className="icon">{s.icons.map(i => <img src={"./img/" + i}/>)}</td>
-         <td className="name">{s.name}</td>
-         <td className="years">{s.years}</td>
-         <td className="level">
-            <ul>{ levels.map(l => <li className={s.level >= l ? "on" : null}/> )}</ul>
-         </td>
-         <td className="note">{s.note}</td>
-      </tr>
-   )}
-   </table>
+   <div className="technical">
+      <h1>Technical Skills</h1>
+      <p>Some paragraph</p>
+      <table>
+         <tr>
+            <th>Language or Platform</th>
+            <th>Yrs</th>
+            <th>Expertise</th>
+            <th className="note"></th>
+         </tr>
+      { props.skills.map(s =>
+         <tr>
+            <td className="name">
+               <p>{s.name}</p>
+               <div>{s.icons.map(i => <img src={"./img/" + i}/>)}</div>
+            </td>
+            <td className="years">{s.years}</td>
+            <td className="level">
+               <ul>{ levels.map(l => <li className={s.level >= l ? "on" : null}/> )}</ul>
+            </td>
+            <td className="note">{s.note}</td>
+         </tr>
+      )}
+      </table>
+   </div>
+   <div className="leadership">
+      <h1>Leadership Skills</h1>
+      <p>Leadership</p>
+      <ul>
+         <li><img src="./img/cpm.jpg"/>
+            <a href="https://en.wikipedia.org/wiki/Certified_Public_Manager">Certified Public Manager</a></li>
+      </ul>
+   </div>
 </Section>;
 
 export default Skills;
