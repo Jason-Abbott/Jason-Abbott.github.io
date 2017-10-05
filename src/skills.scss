@@ -98,7 +98,7 @@ section#skills .content {
                         }
 
                         &.on {
-                           background-color: rgba(0, 255, 0, 0.3);
+                           background-color: lighten($titleColor, 20%);
                         }
 
                         &:first-of-type {

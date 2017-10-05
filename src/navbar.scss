@@ -1,7 +1,7 @@
 @import "brands";
 @import "config";
 
-section.navbar {
+section#navbar {
    height: $navbarHeight;
    background-color: $backgroundColor;
    margin: 0;
@@ -35,14 +35,6 @@ section.navbar {
             }
          }
 
-      }
-
-      &.platforms {
-         img {
-            display: block;
-            height: $navbarHeight / 2;
-            padding: $navbarHeight / 4;
-         }
       }
    }
 }

@@ -1,0 +1,14 @@
+@import "brands";
+@import "config";
+
+nav.platforms {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+   img {
+      display: block;
+      height: $navbarHeight / 2;
+      padding: $navbarHeight / 4;
+   }
+}

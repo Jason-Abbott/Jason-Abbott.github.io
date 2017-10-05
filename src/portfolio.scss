@@ -4,4 +4,51 @@
 section#portfolio {
    background-color: $backgroundColor;
    color: #fff;
+
+   .showcase {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: row;
+
+      nav {
+         >div {
+            width: 10rem;
+            line-height: 3rem;
+            font-weight: 700;
+            text-align: right;
+            cursor: pointer;
+            padding: 0 1rem 0 0;
+            @include text-decoration-skip(ink);
+
+            &.selected {
+               background-color: $titleColor;
+            }
+
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+
+      aside {
+         border: 1px solid $titleColor;
+         padding: 1rem;
+
+         a { font-size: 1.3rem; float: right; }
+
+         a.repo {
+            img {
+               width: 2rem;
+               padding-left: 0.5rem;
+               vertical-align: text-top;
+               margin-bottom: 1rem;
+            }
+         }
+
+         p {
+            clear: both;
+            margin: 0.75rem 0;
+         }
+      }
+   }
 }

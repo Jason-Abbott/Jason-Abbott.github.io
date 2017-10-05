@@ -7,7 +7,7 @@ import { decode } from "./util";
 // weak secret
 const email = "znvygb:wbo@genvyvzntr.pbz";
 
-export const resumeURL = "";
+export const resumeURL = "https://docs.google.com/document/d/1uHO3CWC9mTSYAkh87I5BPbuCEu3ux4BONR3EeS6hahs/edit?usp=sharing";
 
 export const platforms:Link[] = [
    { name: "facebook", url: "www.facebook.com/jason.e.abbott" },
@@ -126,6 +126,18 @@ export const skills:Skill[] = [
 
 export const examples:Example[] = [
    {
-      name: "Toba Technology"
+      name: "Toba Technology",
+      repo: "https://gitlab.com/toba-tech",
+      summary: [
+         "This project is"
+      ]
+   }, {
+      name: "Trail Image",
+      repo: "https://github.com/Jason-Abbott/trail-image",
+      site: "http://www.trailimage.com/",
+      summary: [
+         "The software for my long time photo blog has been repeatedly re-written for no reason other than to test new approaches. There was a functional programming phase (using the Ramda library) then all ES6 classes when those were new. Currently there's a Go branch in the works.",
+         "It integrates with Flickr, Redis and Google Drive APIs in order to publish articles without the addition of any data beyond what's contained in the camera and GPS files. As long the .gpx and .dng files exist, the whole site can be republished at any time."
+      ]
    }
 ];

@@ -6,6 +6,7 @@ import Navbar from "./navbar";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Skills from "./skills";
+import Footer from "./footer";
 import { about, platforms, pageLinks, skills, examples } from "./data";
 
 const App = ()=> <div>
@@ -20,6 +21,7 @@ const App = ()=> <div>
    <About columns={2} list={about}/>
    <Portfolio examples={examples}/>
    <Skills skills={skills}/>
+   <Footer platforms={platforms}/>
 </div>;
 
 ReactDOM.render(<App/>, document.getElementById("react-root"));
