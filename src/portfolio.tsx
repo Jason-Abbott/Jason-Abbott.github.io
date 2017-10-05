@@ -10,7 +10,7 @@ interface Props {
    examples:Example[];
 }
 
-export default (props:Props)=> <Section className="inverted portfolio">
+export default (props:Props)=> <Section id="portfolio" className="inverted">
    <h1>Portfolio</h1>
    <p>Most of my work has been proprietary but I can share a few things.</p>
    { props.examples.map(e =>

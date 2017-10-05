@@ -15,7 +15,7 @@ interface Props {
    skills:Skill[];
 }
 
-export const Skills = (props:Props) => <Section className="skills">
+export const Skills = (props:Props) => <Section id="skills">
    <div className="technical">
       <h1>Technical Skills</h1>
       <p>I </p>
