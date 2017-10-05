@@ -16,7 +16,7 @@ body {
 }
 
 a {
-   text-decoration: none;   
+   text-decoration: none;
    @include text-decoration-skip(ink);
 
    &:hover {
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
    position: absolute;
    border-radius: $faceSize / 2;
    border: 6px solid #fff;
-   
+
    @include tablet {
       top: $navbarHeight * 1.5;
       width: $faceSize / 2;
@@ -63,13 +63,12 @@ h1, h2, h3, h4, h5 {
          display: flex;
          flex-direction: row;
          justify-content: space-between;
-         height: 3.3rem;       
-      }    
+         height: 3.3rem;
+      }
 
       h1, h2 {
          margin: 0;
          padding: 0;
-         line-height: 1.4rem;
          flex-grow: 2;
          width: 50%;
       }
@@ -82,14 +81,15 @@ h1, h2, h3, h4, h5 {
       }
 
       h2 {
+         line-height: 1.5rem;
          text-align: center;
-         margin-top: 0.3rem;
+         margin-top: 0.1rem;
          margin-right: $faceSize / 2;
       }
 
       @include tablet {
          margin-top: 2rem;
-         
+
          .content {
             height: 7.5rem;
             align-items: center;

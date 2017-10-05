@@ -3,7 +3,7 @@
 
 section {
    background-color: #fff;
-   margin-bottom: 3rem;
+   margin-bottom: 1rem;
    color: $backgroundColor;
 
    h1 { font-size: 2rem; }
@@ -15,5 +15,10 @@ section {
       h1, h2, h3, h4, h5 {
          color: #fff;
       }
+   }
+
+   @include tablet {
+      margin-left: 1rem;
+      margin-right: 1rem;
    }
 }

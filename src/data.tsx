@@ -6,6 +6,8 @@ import { decode } from "./util";
 // weak secret
 const email = "znvygb:wbo@genvyvzntr.pbz";
 
+export const resumeURL = "";
+
 export const platforms:Link[] = [
    { name: "facebook", url: "www.facebook.com/jason.e.abbott" },
    { name: "linkedin", url: "www.linkedin.com/in/jasonabbott/" },
@@ -15,9 +17,9 @@ export const platforms:Link[] = [
 ];
 
 export const pageLinks:Link[] = [
-   { name: "About", url: "#about" },
-   { name: "Contact", url: email }, //decode(email) },
-   { name: "Skills", url: "#skills" }
+   { name: "Portfolio", url: "#portfolio" },
+   { name: "Skills", url: "#skills" },
+   { name: "Contact", url: decode(email) }
 ];
 
 export const about:Item[] = [

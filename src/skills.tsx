@@ -29,8 +29,10 @@ export const Skills = (props:Props) => <Section className="skills">
       { props.skills.map(s =>
          <tr>
             <td className="name">
-               <p>{s.name}</p>
-               <div>{s.icons.map(i => <img src={"./img/" + i}/>)}</div>
+               <div>
+                  <p>{s.name}</p>
+                  <div>{s.icons.map(i => <img src={"./img/" + i}/>)}</div>
+               </div>
             </td>
             <td className="years">{s.years}</td>
             <td className="level">

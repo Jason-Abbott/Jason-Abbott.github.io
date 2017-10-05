@@ -27,7 +27,7 @@ section.skills .content {
             border-bottom: 1px solid $titleColor;
 
             th, td {
-               padding: 0.25rem 0.5rem;               
+               padding: 0.25rem 0.5rem;
                &.note { width: 33%; }
             }
 
@@ -41,37 +41,40 @@ section.skills .content {
                @include phone { font-size: 1rem; }
             }
 
-            td {               
+            td {
+               vertical-align: middle;
+
                &.name {
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-between;
-                  align-items: center;
+                  >div {
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: space-between;
+                     align-items: center;
+                     height: 100%;
 
-                  p {
-                     display: block;
-                     font-size: larger;
-                     white-space: nowrap;
-                     padding: 0;
-                     margin: 0;
-                  }
+                     p {
+                        display: block;
+                        font-size: larger;
+                        white-space: nowrap;
+                        padding: 0;
+                        margin: 0;
+                     }
 
-                  >div {                     
-                     img {
+                     >div img {
                         height: 2rem;
                         margin-left: 0.5rem;
                      }
-                  }
 
-                  @include phone {
-                     p { font-size: 1rem; }
-                     img { height: 1rem; }
+                     @include phone {
+                        p { font-size: 1rem; }
+                        img { height: 1rem; }
+                     }
                   }
                }
                &.years { text-align: right; }
                &.level {
                   text-align: center;
-                  
+
                   ul {
                      list-style: none;
                      padding: 0;
@@ -102,7 +105,7 @@ section.skills .content {
 
                      }
                   }
-               }            
+               }
                &.note { font-size: 1rem; }
             }
 
