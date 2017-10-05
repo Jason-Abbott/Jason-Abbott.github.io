@@ -54,7 +54,13 @@ export const skills:Skill[] = [
       name: "React",
       years: 3,
       level: 5,
-      note: "Most client work is now React. Like this page."
+      note: "Most client work I do is now React. Like this page."
+   }, {
+      icons: ["github-octocat.svg"],
+      name: "GitHub (and GitLab)",
+      years: 4,
+      level: 5,
+      note: "The whole methodology with issues, PRs, etc."
    }, {
       icons: ["dotnet.png"],
       name: "C# and ASP.Net",
@@ -101,7 +107,7 @@ export const skills:Skill[] = [
       name: "Perl",
       years: 4,
       level: 3,
-      note: "That was a long time ago. Served web pages with CGI."
+      note: "That was a long time ago, serving web pages with CGI."
    }, {
       icons: ["aws.svg"],
       name: "AWS",
@@ -115,29 +121,33 @@ export const skills:Skill[] = [
       level: 3,
       note: "Managed IAAS and PASS instances through RDP."
    }
-   // , {
-   //    icons: ["google.jpg"],
-   //    name: "Google",
-   //    years: 17,
-   //    level: 5,
-   //    note: "Super-fast at finding answers on Stack Overflow, or whatever."
-   // }
 ];
 
 export const examples:Example[] = [
    {
       name: "Toba Technology",
       repo: "https://gitlab.com/toba-tech",
+      tech: [
+         "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin, fluent wrapper to SQLite files with PRAGMA defined for realtime updates.",
+         "Other evaluated storage solutions include PosgreSQL, RethinkDB, Caylay and BoltDB. Git branches remain for most of those."
+      ],
       summary: [
-         "This project is"
+         "Years in enterprises of 10,000 to 100,000 employees taught me that much of the line-of-business software on the market is as decrepit as it is expensive.",
+         "While cloud solutions were moving rapidly to responsive and realtime, on-premise was still seeing \"requires IE6\" notices."
       ]
    }, {
       name: "Trail Image",
       repo: "https://github.com/Jason-Abbott/trail-image",
       site: "http://www.trailimage.com/",
+      tech: [
+         "Built with Isomorphic TypeScript on a Node 8.x and Express backend incorporating custom caching and spam-blocking middlware, and integrated with Google Drive, Flickr, Redis and Mapbox APIs.",
+         "Configured with thorough unit tests for continuous integration through Travis and Heroku.",
+         "This project serves as one of my innovation platforms, routinely rewritten for no other reason than to test new technologies. It was all ES6 classes at one time and all functional programming (with Ramda) at another.",
+         "The latest iteration underway is a port to Go. Check out the diagram and branches in the repository."
+      ],
       summary: [
-         "The software for my long time photo blog has been repeatedly re-written for no reason other than to test new approaches. There was a functional programming phase (using the Ramda library) then all ES6 classes when those were new. Currently there's a Go branch in the works.",
-         "It integrates with Flickr, Redis and Google Drive APIs in order to publish articles without the addition of any data beyond what's contained in the camera and GPS files. As long the .gpx and .dng files exist, the whole site can be republished at any time."
+         "The platform design goal is to directly use camera and GPS files to generate an SEO optimized, detailed (photo tags, camera info, maps), engaging and responsive photo blog without need of any other data.",
+         "This facilitates one-click publishing and means the site and its integrations could all be erased with no loss of content. It can be immediately regenerated directly from .dng and .gpx files."
       ]
    }
 ];

@@ -7,6 +7,7 @@ export interface Example {
    name:string;
    repo:string;
    site?:string;
+   tech:string[];
    summary:string[];
 }
 
@@ -35,7 +36,10 @@ export default class extends React.PureComponent<Props, State> {
       if (example !== undefined) {
          aside = <aside>
             <a className="repo" href={example.repo}>View code repository<img src="./img/git.svg"/></a>
-            {example.summary.map(s => <p>{s}</p>)}
+            <div className="columns">
+               <div className="tech">{example.tech.map(t => <p>{t}</p>)}</div>
+               <div>{example.summary.map(s => <p>{s}</p>)}</div>
+            </div>
             { (example.site) ? <a className="site" href={example.site}>Visit Site</a> : null }
          </aside>;
       }

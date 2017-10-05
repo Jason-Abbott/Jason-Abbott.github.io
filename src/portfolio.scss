@@ -45,10 +45,27 @@ section#portfolio {
             }
          }
 
-         p {
+         .columns {
             clear: both;
+            display: flex;
+            flex-direction: row;
+            align-content: flex-start;
             margin: 0.75rem 0;
-         }
+
+            >div {
+               h3 {
+                  margin: 0;
+                  padding: 0;
+               }
+               p {
+                  margin: 0 0 1rem;
+               }
+
+               &.tech {
+                  margin-right: 2rem;
+               }
+            }
+         }         
       }
    }
 }
