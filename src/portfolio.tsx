@@ -48,6 +48,7 @@ export default class extends React.PureComponent<Props, State> {
       }
 
       return <Section id="portfolio" className="inverted">
+         <a href={resumeURL} className="resume">Resume</a>
          <h1>Portfolio</h1>
          <p>Most of my work has been proprietary but I can share a few personal projects
             and summaries of the rest. Check out my <a href={resumeURL}>resume</a> for more
