@@ -3,6 +3,7 @@ import * as React from "react";
 
 interface Props {
    className?:string;
+   anchor?:string;
    children:any;
 }
 
