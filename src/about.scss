@@ -1,6 +1,8 @@
 @import "config";
 
 section.about {
+   padding: 0;
+
    .content {
       display: flex;
       flex-direction: row;
@@ -18,7 +20,7 @@ section.about {
       @include tablet {
          width: 50%;
       }
-   
+
       dt {
          color: $titleColor;
          font-family: $titleFont;

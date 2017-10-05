@@ -1,6 +1,7 @@
 $backgroundColor: #333;
 $titleColor: #357;
 $lightColor: #989BA0;
+$linkColor: saturate($titleColor, 60%);
 
 $tabletWidth: 768px;
 $desktopWidth: 1024px;

@@ -6,7 +6,7 @@ import Navbar from "./navbar";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Skills from "./skills";
-import { about, platforms, pageLinks, skills } from "./data";
+import { about, platforms, pageLinks, skills, examples } from "./data";
 
 const App = ()=> <div>
    <Navbar platforms={platforms} pageLinks={pageLinks} />
@@ -18,7 +18,7 @@ const App = ()=> <div>
       </Section>
    </div>
    <About columns={2} list={about}/>
-   <Portfolio/>
+   <Portfolio examples={examples}/>
    <Skills skills={skills}/>
 </div>;
 

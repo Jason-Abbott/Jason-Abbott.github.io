@@ -5,8 +5,10 @@ section {
    background-color: #fff;
    margin-bottom: 1rem;
    color: $backgroundColor;
+   padding: 1rem 0;
 
-   h1 { font-size: 2rem; }
+   h1 { font-size: 2rem; margin: 0; }
+   p { margin: 0; }
 
    &.inverted {
       color: #fff;

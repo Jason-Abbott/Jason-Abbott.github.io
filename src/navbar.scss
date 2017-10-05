@@ -5,6 +5,7 @@ section.navbar {
    height: $navbarHeight;
    background-color: $backgroundColor;
    margin: 0;
+   padding: 0;
 
    .content {
       display: flex;

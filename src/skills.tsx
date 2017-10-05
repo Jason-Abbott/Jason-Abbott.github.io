@@ -18,7 +18,7 @@ interface Props {
 export const Skills = (props:Props) => <Section className="skills">
    <div className="technical">
       <h1>Technical Skills</h1>
-      <p>Some paragraph</p>
+      <p>I </p>
       <table>
          <tr>
             <th>Language or Platform</th>
@@ -45,7 +45,7 @@ export const Skills = (props:Props) => <Section className="skills">
    </div>
    <div className="leadership">
       <h1>Leadership Skills</h1>
-      <p>Leadership</p>
+      <p>I have spent meany years in leadership roles including team lead, supervisor, software development manager and enterprise architect.</p>
       <ul>
          <li><img src="./img/cpm.jpg"/>
             <a href="https://en.wikipedia.org/wiki/Certified_Public_Manager">Certified Public Manager</a></li>

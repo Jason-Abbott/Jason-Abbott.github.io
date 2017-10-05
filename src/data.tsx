@@ -1,6 +1,7 @@
 import { Link } from "./navbar";
 import { Item } from "./about";
 import { Skill } from "./skills";
+import { Example } from "./portfolio";
 import { decode } from "./util";
 
 // weak secret
@@ -27,7 +28,7 @@ export const about:Item[] = [
    { title: "Father of four", __html: "It&rsquo;s safe &mdash; two are in other countries." },
    { title: "Mediocre travel writer", __html: "I have <a href=\"http://www.trailimage.com\">this blog</a>, you see &hellip;" },
    { title: "Keeper of a pond", __html: "Koi are demanding and blue heron are rude." },
-   { title: "Photo enthusiast", __html: "I still have prints in the garage left over from the farmers market &hellip; five years ago. Want one?" }
+   { title: "Photo enthusiast", __html: "I have prints in the garage left over from selling at the farmers market &hellip; five years ago." }
 ];
 
 export const skills:Skill[] = [
@@ -49,6 +50,12 @@ export const skills:Skill[] = [
       years: 2,
       level: 4
    }, {
+      icons: ["react.svg"],
+      name: "React",
+      years: 3,
+      level: 5,
+      note: "Most client work is now React. Like this page."
+   }, {
       icons: ["dotnet.png"],
       name: "C# and ASP.Net",
       years: 12,
@@ -65,18 +72,19 @@ export const skills:Skill[] = [
       name: "SQL",
       years: 20,
       level: 5,
-      note: "T-SQL with two years of MySQL, PostgreSQL and SQLite."
+      note: "Mostly T-SQL but a couple years each for MySQL, PostgreSQL and SQLite."
    }, {
-      icons: ["react.svg"],
-      name: "React",
-      years: 3,
-      level: 5
+      icons: ["python.png", "django.svg"],
+      name: "Python",
+      years: 2,
+      level: 3,
+      note: "With Django."
    }, {
       icons: ["php.svg", "yii.png", "laravel.png"],
       name: "PHP",
       years: 3,
       level: 3,
-      note: "Laravel and Yii."
+      note: "With Laravel and Yii."
    }, {
       icons: ["angular.svg"],
       name: "Angular",
@@ -93,24 +101,31 @@ export const skills:Skill[] = [
       name: "Perl",
       years: 4,
       level: 3,
-      note: "That was a long time ago. Life was simple then."
+      note: "That was a long time ago. Served web pages with CGI."
    }, {
       icons: ["aws.svg"],
       name: "AWS",
       years: 3,
       level: 3,
-      note: "Created and manage RDS and EC2 instances and their security groups."
+      note: "Created and managed RDS and EC2 instances."
    }, {
       icons: ["azure.png"],
       name: "Azure",
       years: 2,
       level: 3,
       note: "Managed IAAS and PASS instances through RDP."
-   }, {
-      icons: ["google.jpg"],
-      name: "Google",
-      years: 17,
-      level: 5,
-      note: "Super-fast at finding answers on Stack Overflow, or whatever."
+   }
+   // , {
+   //    icons: ["google.jpg"],
+   //    name: "Google",
+   //    years: 17,
+   //    level: 5,
+   //    note: "Super-fast at finding answers on Stack Overflow, or whatever."
+   // }
+];
+
+export const examples:Example[] = [
+   {
+      name: "Toba Technology"
    }
 ];
