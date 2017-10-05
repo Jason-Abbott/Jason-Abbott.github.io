@@ -1,6 +1,5 @@
 import "./section.scss";
 import * as React from "react";
-import Content from "./content";
 
 interface Props {
    className?:string;
@@ -8,5 +7,5 @@ interface Props {
 }
 
 export default (props:Props) => <section className={props.className}>
-   <Content {... props}/>
+   <div className="content">{props.children}</div>
 </section>;

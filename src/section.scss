@@ -17,8 +17,15 @@ section {
       }
    }
 
+   .content {
+      max-width: 1040px;
+      margin: 0 auto;
+   }
+
    @include tablet {
       margin-left: 1rem;
       margin-right: 1rem;
+
+      .content { margin: 0; }
    }
 }
