@@ -13,7 +13,7 @@ section#portfolio {
       nav {
          >div {
             width: 10rem;
-            line-height: 3rem;
+            line-height: 4rem;
             font-weight: 700;
             text-align: right;
             cursor: pointer;
@@ -24,15 +24,18 @@ section#portfolio {
                background-color: $titleColor;
             }
 
-            &:hover {
-               text-decoration: underline;
+            &:not(.selected) {
+               &:hover {
+                  text-decoration: underline;
+                  background-color: lighten($backgroundColor, 5%);
+               }
             }
          }
       }
 
       aside {
          border: 1px solid $titleColor;
-         padding: 1rem;
+         padding: 1rem 1.5rem;
 
          a { font-size: 1.3rem; float: right; }
 

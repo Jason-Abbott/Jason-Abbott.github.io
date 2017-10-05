@@ -5,7 +5,7 @@ import { resumeURL } from "./data";
 
 export interface Example {
    name:string;
-   repo:string;
+   repo?:string;
    site?:string;
    tech:string[];
    summary:string[];
@@ -35,7 +35,10 @@ export default class extends React.PureComponent<Props, State> {
 
       if (example !== undefined) {
          aside = <aside>
-            <a className="repo" href={example.repo}>View code repository<img src="./img/git.svg"/></a>
+            { (example.repo)
+               ? <a className="repo" href={example.repo}>View code repository<img src="./img/git.svg"/></a>
+               : null
+            }
             <div className="columns">
                <div className="tech">{example.tech.map(t => <p>{t}</p>)}</div>
                <div>{example.summary.map(s => <p>{s}</p>)}</div>
@@ -46,8 +49,9 @@ export default class extends React.PureComponent<Props, State> {
 
       return <Section id="portfolio" className="inverted">
          <h1>Portfolio</h1>
-         <p>Most of my work has been proprietary but I can share a few personal projects.
-            Check out my <a href={resumeURL}>resume</a> for information about the others.</p>
+         <p>Most of my work has been proprietary but I can share a few personal projects
+            and summaries of the rest. Check out my <a href={resumeURL}>resume</a> for more
+            about the proprietary projects.</p>
          <div className="showcase">
             <nav>
             { this.props.examples.map(e =>

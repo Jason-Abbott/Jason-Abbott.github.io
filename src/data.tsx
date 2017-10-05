@@ -25,9 +25,9 @@ export const pageLinks:Link[] = [
 
 export const about:Item[] = [
    { title: "Dirtbike rider", __html: "I&rsquo;m still working on my wheelie but I&rsquo;ve mastered the wipe-out." },
-   { title: "Father of four", __html: "It&rsquo;s safe &mdash; two are in other countries." },
+   { title: "Father of four", __html: "It&rsquo;s safe again &mdash; two are now in other countries." },
    { title: "Mediocre travel writer", __html: "I have <a href=\"http://www.trailimage.com\">this blog</a>, you see &hellip;" },
-   { title: "Keeper of a pond", __html: "Koi are demanding and blue heron are rude." },
+   { title: "Keeper of a pond", __html: "Koi are demanding and blue heron are rude. I&rsquo;m not sure why I do it." },
    { title: "Photo enthusiast", __html: "I have prints in the garage left over from selling at the farmers market &hellip; five years ago." }
 ];
 
@@ -128,12 +128,14 @@ export const examples:Example[] = [
       name: "Toba Technology",
       repo: "https://gitlab.com/toba-tech",
       tech: [
-         "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin, fluent wrapper to SQLite files with PRAGMA defined for realtime updates.",
-         "Other evaluated storage solutions include PosgreSQL, RethinkDB, Caylay and BoltDB. Git branches remain for most of those."
+         "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin (also fluent) wrapper to SQLite files with PRAGMA defined for realtime updates through the persistent websocket in goroutines.",
+         "Other evaluated storage solutions include PosgreSQL, RethinkDB, Caylay and BoltDB. Git branches remain for most of those.",
+         "(I am using GitLab because it offers private repositories in the free tier. I haven't decided what will remain open-source.)"
       ],
       summary: [
-         "Years in enterprises of 10,000 to 100,000 employees taught me that much of the line-of-business software on the market is as decrepit as it is expensive.",
-         "While cloud solutions were moving rapidly to responsive and realtime, on-premise was still seeing \"requires IE6\" notices."
+         "This is two projects, the solution and its marketing site, both under development.",
+         "It is an initiative targeted at businesses having policies averse to cloud solutions which, in my experience, often relegates them to software that's as decrepit (weirdly difficult to install, maintain and use) as it is expensive.",
+         "My goal is a solution that's trivial to install (single binary) with the high-performance, realtime and responsive attributes we expect today."
       ]
    }, {
       name: "Trail Image",
@@ -146,8 +148,28 @@ export const examples:Example[] = [
          "The latest iteration underway is a port to Go. Check out the diagram and branches in the repository."
       ],
       summary: [
-         "The platform design goal is to directly use camera and GPS files to generate an SEO optimized, detailed (photo tags, camera info, maps), engaging and responsive photo blog without need of any other data.",
+         "The platform design goal is to directly use camera and GPS files to generate an SEO optimized (i.e. JSON-LD), detailed (photo tags, camera info, maps), engaging and responsive photo blog without need of any other data.",
          "This facilitates one-click publishing and means the site and its integrations could all be erased with no loss of content. It can be immediately regenerated directly from .dng and .gpx files."
+      ]
+   }, {
+      name: "Corporate",
+      tech: [
+         "I have worked in and on a wide range of technologies and platforms (most of which are listed among my skills below) for companies small and large, public, non-profit and private."
+      ],
+      summary: [
+         "There are several projects in this category that I'm proud of but those I can really take credit for have been internal. I can only describe them.",
+         "I found it interesting to work with staff statisticians to implement models for detecting unemployment insurance fraud with complex SQL queries across multiple datasets. The matches fed a new case management system, mildly gamified with notifications indicating closure rate relative to co-workers.",
+         "I was also proud to propose and lead the front-end redesign and rewrite of the commerce site for a major grocery chain, resulting in hugely positive feedback and media in the affected Washington and California markets."
+      ]
+   }, {
+      name: "Older Stuff",
+      repo: "https://github.com/Jason-Abbott?tab=repositories",
+      tech: [
+         "My first projects in the early 1990s were Perl on Unix followed by a decade on the Microsoft stack — IIS, Classic ASP, COM+, Commerce Server, SQL Server, ASP.Net and C#."
+      ],
+      summary: [
+         "I back-filled GitHub with a smattering of old projects going back to the 1990s. Pay attention to the project date indicated in the README or project description rather than the commit dates.",
+         "Several of them are simple websites. A couple are widgets I sold for several years, a calendar and tree navigation. Getting paid was interesting since there were no online payment providers then."
       ]
    }
 ];
