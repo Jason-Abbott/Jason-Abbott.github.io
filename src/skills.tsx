@@ -21,7 +21,7 @@ export const Skills = (props:Props) => <Section id="skills">
       <p>I truly enjoy learning new tools and techniques to efficiently deliver more stable and effective solutions. I study every day.</p>
       <table>
          <tr>
-            <th>Language or Platform</th>
+            <th></th>
             <th>Yrs</th>
             <th>Expertise</th>
             <th className="note"></th>
@@ -48,7 +48,8 @@ export const Skills = (props:Props) => <Section id="skills">
       <p>Most of my career has been in leadership positions, from team lead to supervisor, software development manager and enterprise-level architect.</p>
       <img className="cpm" src="./img/cpm.jpg"/>
       <p>As the development manager over a team of DBAs and a team of programmers, I was sponsored by the organization for the three-year <a href="https://en.wikipedia.org/wiki/Certified_Public_Manager">Certified Public Manager</a> program, which I completed in December, 2009.</p>
-      <p>As much as I love learning, I may enjoy passing it along, helping others grow, just as much.</p>
+      <p>As a leader in organizations that generate or utilize federal and personal health data, I've been responsible to ensure critical policy compliance and respond to audit findings.</p>
+      <p>My favorite part of leadership is passing along what I've learned, seeing others grow.</p>
    </div>
 </Section>;
 

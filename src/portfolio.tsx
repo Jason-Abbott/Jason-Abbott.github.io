@@ -52,7 +52,7 @@ export default class extends React.PureComponent<Props, State> {
          <h1>Portfolio</h1>
          <p>Most of my work has been proprietary but I can share a few personal projects
             and summaries of the rest. Check out my <a href={resumeURL}>resume</a> for more
-            about the proprietary projects.</p>
+            about the proprietary work.</p>
          <div className="showcase">
             <nav>
             { this.props.examples.map(e =>
