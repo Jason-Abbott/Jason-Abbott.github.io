@@ -139,7 +139,7 @@ export const examples:Example[] = [
          "(I am using GitLab because it offers private repositories in the free tier. I haven't decided what will remain open-source.)"
       ],
       summary: [
-         "This is two projects, the solution and its marketing site, both under development.",
+         "This is two projects, the solution and its marketing site; both under development.",
          "It is an initiative targeted at businesses having policies averse to cloud solutions which, in my experience, often relegates them to software that's as decrepit (weirdly difficult to install, maintain and use) as it is expensive.",
          "My goal is a solution that's trivial to install (single binary) with the high-performance, realtime and responsive attributes we expect today."
       ]
@@ -148,7 +148,7 @@ export const examples:Example[] = [
       repo: "https://github.com/Jason-Abbott/trail-image",
       site: "http://www.trailimage.com/",
       tech: [
-         "Built with Isomorphic TypeScript on a Node 8.x and Express backend incorporating custom caching and spam-blocking middlware, and integrated with Google Drive, Flickr, Redis and Mapbox APIs.",
+         "Built with Isomorphic TypeScript on a Node 8.x and Express backend incorporating custom caching and spam-blocking middleware, and integrated with Google Drive, Flickr, Redis and Mapbox APIs.",
          "Configured with thorough unit tests for continuous integration through Travis and Heroku.",
          "This project serves as one of my innovation platforms, routinely rewritten for no other reason than to test new technologies. It was all ES6 classes at one time and all functional programming (with Ramda) at another.",
          "The latest iteration underway is a port to Go. Check out the diagram and branches in the repository."
@@ -164,7 +164,7 @@ export const examples:Example[] = [
          "The list of technical skills below covers most my experience, though a few things didn't seem worth highlighting, like two years spent working on a Flash application."
       ],
       summary: [
-         "There are several projects in this category that I'm proud of but those I can take majority credit for have been internal. I can only describe them.",
+         "There are several projects in this category that I'm proud of, but those I can take majority credit for have been internal. I can only describe them.",
          "It was interesting and satisfying to work with staff statisticians to implement models for detecting unemployment insurance fraud with complex SQL queries across multiple datasets. The matches fed a case management system I built in ASP.Net, mildly gamified with notifications indicating closure rate relative to co-workers.",
          "I was also proud to propose and lead the front-end redesign and rewrite of the commerce site for a major grocery chain, resulting in hugely positive feedback and media in the affected Washington and California markets.",
          "I can think of many solutions I've developed that were innovative in their time, like figuring out convolution matrices to resize and sharpen images for a real-estate application before there were libraries around to do it."
