@@ -107,7 +107,7 @@ export const skills:Skill[] = [
       name: "GIS",
       years: 3,
       level: 3,
-      note: "Imported, transformed, projected, normalized"
+      note: "Imported, transformed, projected, normalized. Oh my."
    }, {
       icons: ["perl.svg"],
       name: "Perl",
