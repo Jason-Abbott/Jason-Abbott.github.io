@@ -135,7 +135,7 @@ export const examples:Example[] = [
       repo: "https://gitlab.com/toba-tech",
       tech: [
          "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin (also fluent) wrapper to SQLite files with PRAGMA defined for realtime updates through the persistent websocket in goroutines.",
-         "Other evaluated storage solutions include PosgreSQL, RethinkDB, Cayley and BoltDB. Git branches remain for most of those.",
+         "Other evaluated storage solutions include PostgreSQL, RethinkDB, Cayley and BoltDB. Git branches remain for most of those.",
          "(I am using GitLab because it offers private repositories in the free tier. I haven't decided what will remain open-source.)"
       ],
       summary: [
