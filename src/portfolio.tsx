@@ -50,15 +50,12 @@ export default class extends React.PureComponent<Props, State> {
       return <Section id="portfolio" className="inverted">
          <a href={resumeURL} className="resume">Resume</a>
          <h1>Portfolio</h1>
-         <p>Most of my work has been proprietary but I can share a few personal projects
-            and summaries of the rest. Check out my <a href={resumeURL}>resume</a> for more
-            about the proprietary work.</p>
          <div className="showcase">
             <nav>
             { this.props.examples.map(e =>
                <div
                   onClick={()=>this.select(e.name)}
-                  className={e.name == this.state.selected ? "selected" : null}>{e.name}</div>
+                  className={e.name == this.state.selected ? "selected" : undefined}>{e.name}</div>
             )}
             </nav>
             {aside}

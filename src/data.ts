@@ -132,7 +132,7 @@ export const skills:Skill[] = [
 export const examples:Example[] = [
    {
       name: "Toba Technology",
-      repo: "https://gitlab.com/toba-tech",
+      repo: "https://github.com/toba",
       tech: [
          "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin (also fluent) wrapper to SQLite files with PRAGMA defined for realtime updates through the persistent websocket in goroutines.",
          "Other evaluated storage solutions include PostgreSQL, RethinkDB, Cayley and BoltDB. Git branches remain for most of those.",
@@ -157,6 +157,40 @@ export const examples:Example[] = [
          "The platform design goal is to directly use camera and GPS files to generate an SEO optimized (i.e. JSON-LD), detailed (photo tags, camera info, maps), engaging and responsive photo blog without need of any other data.",
          "This facilitates one-click publishing and means the site and its integrations could all be erased with no loss of content. It can be immediately regenerated directly from .dng and .gpx files."
       ]
+   },
+   {
+      name: "Enterprise Kiosk",
+      repo: "",
+      tech: [],
+      summary: []
+   },
+   {
+      name: "V.A.A.S.T",
+      repo: "https://github.com/Jason-Abbott/vasst",
+      tech: [
+         ""
+      ],
+      summary: []
+   }, {
+      name: "Albertsons",
+      repo: "https://github.com/Jason-Abbott/albertsons",
+      tech: [
+         ""
+      ],
+      summary: []
+   }, {
+      name: "Benefit Payment Control",
+      tech: [
+         ""
+      ],
+      summary: []
+   }, {
+      name: "webCal",
+      repo: "https://github.com/Jason-Abbott/webCal",
+      tech: [
+         ""
+      ],
+      summary: []
    }, {
       name: "Corporate",
       tech: [
@@ -170,8 +204,8 @@ export const examples:Example[] = [
          "I can think of many solutions I've developed that were innovative in their time, like figuring out convolution matrices to resize and sharpen images for a real-estate application before there were libraries around to do it."
       ]
    }, {
-      name: "Older Stuff",
-      repo: "https://github.com/Jason-Abbott?tab=repositories",
+      name: "Nacscorp",
+      repo: "https://github.com/Jason-Abbott/nacscorp",
       tech: [
          "My first projects in the early 1990s were Perl on Unix followed by a decade on the Microsoft stack — IIS, Classic ASP, COM+, Commerce Server, SQL Server, ASP.Net and C#.",
          "For the last seven years, my projects have all been platform agnostic, Node and Go with React or vanilla Javascript on the client."
