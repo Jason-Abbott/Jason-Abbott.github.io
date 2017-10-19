@@ -134,15 +134,14 @@ export const examples:Example[] = [
       name: "Toba Technology",
       repo: "https://github.com/toba",
       tech: [
-         "Protobuf client-server communication and storage for best throughput and type safety.",
-         "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin (also fluent) wrapper to SQLite files with PRAGMA defined for realtime updates through the persistent websocket in goroutines.",
-         "Other evaluated storage solutions include PostgreSQL, RethinkDB, Cayley and BoltDB. Git branches remain for most of those.",
-         "(I am using GitLab because it offers private repositories in the free tier. I haven't decided what will remain open-source.)"
+         "Protobuf client-server communication and storage for best throughput, type safety and developer ergonomics.",
+         "Line of business applications implemented as lightweight, modular React apps.",
+         "Compiled as single, native binary (any platform) with embedded web assets for super easy integration and management."
       ],
       summary: [
-         "This is two projects, the solution and its marketing site; both under development.",
-         "It is an initiative targeted at businesses having policies averse to cloud solutions which, in my experience, often relegates them to software that's as decrepit (weirdly difficult to install, maintain and use) as it is expensive.",
-         "My goal is a solution that's trivial to install (single binary) with the high-performance, realtime and responsive attributes we expect today."
+         "An initiative to bring high performance, modern, responsive software solutions to businesses having policies averse to public cloud solutions.",
+         "Cloud platforms have left on-premise software little mindshare, often leaving it as decrepit (weirdly difficult to install, maintain and use) as it is overpriced.",
+         "Delivered as a single, proprietary binary from open source building blocks, the Toba solution will require little to no integration or operating expense."
       ]
    }, {
       name: "Trail Image",
@@ -154,56 +153,81 @@ export const examples:Example[] = [
          "Thorough unit tests enable continuous integration through Travis and Heroku."
       ],
       summary: [
-         "This project directly uses use camera and GPS files to generate an SEO optimized (i.e. JSON-LD), detailed (photo tags, camera info, maps), responsive photo blog without need of any other data.",
-         "This facilitates one-click publishing and means the site and its integrations could all be erased with no loss of content. It can be immediately regenerated directly from .dng and .gpx files.",
+         "Facilitates one-click publishing by directly using camera and GPS files to generate an SEO optimized (i.e. JSON-LD), detailed (photo tags, camera info, maps) and responsive photo blog without need of any other data.",
+         "This design makes the site resilient to data loss. It can be immediately and completely regenerated directly from .dng and .gpx files.",
          "This project serves as one of my innovation platforms, routinely rewritten for no other reason than to test new technologies. It was all ES6 classes at one time and all functional programming (with Ramda) at another.",
          "The latest iteration underway is a port to Go. Check out the diagram and branches in the repository."
       ]
-   },
-   {
+   }, {
+      name: "Portfolio",
+      repo: "https://github.com/Jason-Abbott/Jason-Abbott.github.io",
+      summary: [
+         "You are looking at it! A bit over-engineered, yes, but still able to stand it up in a day using toolchains I'd already refined.",
+         "Worth a mention only because it illustrates React and UX work I've done elsewhere but can't easily share."
+      ],
+      tech: [
+         "React application written in TypeScript and bundled with Webpack.",
+         "Componentized SASS styling that's concatenated and minified.",
+         "Tiny content management system allows updates without editing any components."
+      ]
+   }, {
       name: "Enterprise Kiosk",
-      repo: "",
-      tech: [],
-      summary: []
+      repo: "https://github.com/Jason-Abbott/enterprise-kiosk",
+      tech: [
+         "Automated role-based authorization with SSPI integration to Active Directory groups",
+         "\"Touchless\" design and theme updates with drawing primitives that scale, sharpen and generate graphic assets on-the-fly",
+         "Custom field attributes automate MVC field bindings",
+         "Multi-threaded scheduler polls for changes in external systems",
+         "Custom HTTP handlers for AJAX and generated image caching"
+      ],
+      summary: [
+         "Kiosk is an ASP.Net MVC intranet site created as the final project for the three-year Certified Public Manager program I went through (see Leadership Skills below).",
+         "Its purpose is to surface diverse business metrics in the simple, consumable manner of a kiosk by integrating (but not duplicating) data from disparate systems and platforms."
+      ]
    },
    {
       name: "V.A.A.S.T",
       repo: "https://github.com/Jason-Abbott/vasst",
       tech: [
-         ""
+         "Custom product promotion system leveraging interfaces, reflection and binary serialization to support arbtrary criteria and combinations.",
+         "Suite of custom HTML controls (with IntelliSense configured) use reflection to read the criteria and other classes to generate friendly, easily managed forms.",
+         "Low-level graphics code to generate and enhance image assets on-the-fly, cached in custom HTTP handlers."
       ],
-      summary: []
+      summary: [
+         "Public ASP.Net site created to manage contests, file uploads, reviews, comments and rankings among video editors. The site is no longer active since the company's business has changed."
+      ]
    }, {
       name: "Albertsons",
       repo: "https://github.com/Jason-Abbott/albertsons",
-      tech: [
-         ""
+      summary: [
+         "I was team lead for front-end e-commerce development in 2002 when we took the initiative to rewrite and redesign everything on the Albertsons shopping site from the stored procedures up.",
+         "I pitched the idea to our VP who agreed only if we would commit to being done in a month. A month! But we were motivated so I agreed. It took some long hours but our team pulled it off.",
+         "The result was hugely positive. The press and customers raved about the improvements. (Some of their quotes are in the respository README.)"
       ],
-      summary: []
+      tech: [
+         "Innovative use (at the time) of Javascript and a hidden frame to display an always up-to-date, interactive cart.",
+         "Greatly simplified (perhaps even made fun) delivery reservation screens.",
+         "Optimized data access layer and payment authorization flow to substantially speed up shopping."
+      ]
    }, {
       name: "Benefit Payment Control",
       tech: [
-         ""
+         "Gamified agent home screens by always displaying current closure rate relative to team average."
       ],
-      summary: []
+      summary: [
+         ""
+      ]
    }, {
       name: "webCal",
       repo: "https://github.com/Jason-Abbott/webCal",
       tech: [
-         ""
-      ],
-      summary: []
-   }, {
-      name: "Corporate",
-      tech: [
-         "I have worked in and on a wide range of technologies and platforms for companies small and large, public, non-profit and private.",
-         "The list of technical skills below covers most my experience, though a few things didn't seem worth highlighting, like two years spent working on a Flash application."
+         "Elegant day, week and month views supported across version 3 and 4 browsers (not easy at the time!) with clever <table> usage.",
+         "Themeable with a set of coordinated palettes, including instructions for creating custom themes.",
+         "Data model allowing various kinds of event repetition and events that span days (requiring some tricky HTML)."
       ],
       summary: [
-         "There are several projects in this category that I'm proud of, but those I can take majority credit for have been internal. I can only describe them.",
-         "It was interesting and satisfying to work with staff statisticians to implement models for detecting unemployment insurance fraud with complex SQL queries across multiple datasets. The matches fed a case management system I built in ASP.Net, mildly gamified with notifications indicating closure rate relative to co-workers.",
-         "I was also proud to propose and lead the front-end redesign and rewrite of the commerce site for a major grocery chain, resulting in hugely positive feedback and media in the affected Washington and California markets.",
-         "I can think of many solutions I've developed that were innovative in their time, like figuring out convolution matrices to resize and sharpen images for a real-estate application before there were libraries around to do it."
+         "One of a handful of widgets I sold for about five years before their functionality became ubiquitous. This was a calendar. I also had a tree navigation and photo album widget.",
+         "The products led to various contract jobs with a fire department, college, church and county, to exend the functionality to reserve resources and handle scheduling conflicts."
       ]
    }, {
       name: "Nacscorp",

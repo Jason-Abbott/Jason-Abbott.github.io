@@ -50,7 +50,7 @@ export default class extends React.PureComponent<Props, State> {
       return <Section id="portfolio" className="inverted">
          <a href={resumeURL} className="resume">Resume</a>
          <h1>Portfolio</h1>
-         <p>Projects for which I was solely or primarily responsible. For more details, see each project repository's README.</p>
+         <p>Some of the projects for which I was solely or primarily responsible. For more details, see each project repository's README.</p>
          <div className="showcase">
             <nav>
             { this.props.examples.map(e =>
