@@ -25,7 +25,7 @@ export const pageLinks:Link[] = [
 
 export const about:Item[] = [
    { title: "Dirtbike rider", __html: "I&rsquo;m still working on my wheelie but I&rsquo;ve mastered the wipe-out." },
-   { title: "Father of four", __html: "It&rsquo;s safe again &mdash; two are now in other countries." },
+   { title: "Father of four", __html: "Three girls and a boy. It&rsquo;s safe again &mdash; two are now in other countries." },
    { title: "Mediocre travel writer", __html: "I have <a href=\"http://www.trailimage.com\">this blog</a>, you see &hellip;" },
    { title: "Keeper of a pond", __html: "Koi are demanding and blue heron are rude. I&rsquo;m not sure why I do it." },
    { title: "Photo enthusiast", __html: "I have prints in the garage left over from selling at the farmers market &hellip; five years ago." }
@@ -134,6 +134,7 @@ export const examples:Example[] = [
       name: "Toba Technology",
       repo: "https://github.com/toba",
       tech: [
+         "Protobuf client-server communication and storage for best throughput and type safety.",
          "Multiple React apps built with TypeScript communicate through pure websockets to fluently defined Go server endpoints. Data are persisted through a thin (also fluent) wrapper to SQLite files with PRAGMA defined for realtime updates through the persistent websocket in goroutines.",
          "Other evaluated storage solutions include PostgreSQL, RethinkDB, Cayley and BoltDB. Git branches remain for most of those.",
          "(I am using GitLab because it offers private repositories in the free tier. I haven't decided what will remain open-source.)"
@@ -148,14 +149,15 @@ export const examples:Example[] = [
       repo: "https://github.com/Jason-Abbott/trail-image",
       site: "http://www.trailimage.com/",
       tech: [
-         "Built with Isomorphic TypeScript on a Node 8.x and Express backend incorporating custom caching and spam-blocking middleware, and integrated with Google Drive, Flickr, Redis and Mapbox APIs.",
-         "Configured with thorough unit tests for continuous integration through Travis and Heroku.",
-         "This project serves as one of my innovation platforms, routinely rewritten for no other reason than to test new technologies. It was all ES6 classes at one time and all functional programming (with Ramda) at another.",
-         "The latest iteration underway is a port to Go. Check out the diagram and branches in the repository."
+         "Isomorphic TypeScript on a Node 8.x and Express backend incorporate custom caching and spam-blocking middleware.",
+         "Integrated with Google Drive, Flickr, Redis and Mapbox APIs.",
+         "Thorough unit tests enable continuous integration through Travis and Heroku."
       ],
       summary: [
-         "The platform design goal is to directly use camera and GPS files to generate an SEO optimized (i.e. JSON-LD), detailed (photo tags, camera info, maps), engaging and responsive photo blog without need of any other data.",
-         "This facilitates one-click publishing and means the site and its integrations could all be erased with no loss of content. It can be immediately regenerated directly from .dng and .gpx files."
+         "This project directly uses use camera and GPS files to generate an SEO optimized (i.e. JSON-LD), detailed (photo tags, camera info, maps), responsive photo blog without need of any other data.",
+         "This facilitates one-click publishing and means the site and its integrations could all be erased with no loss of content. It can be immediately regenerated directly from .dng and .gpx files.",
+         "This project serves as one of my innovation platforms, routinely rewritten for no other reason than to test new technologies. It was all ES6 classes at one time and all functional programming (with Ramda) at another.",
+         "The latest iteration underway is a port to Go. Check out the diagram and branches in the repository."
       ]
    },
    {

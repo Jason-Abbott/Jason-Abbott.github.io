@@ -26,7 +26,7 @@ section#portfolio {
       nav {
          >div {
             width: 12rem;
-            line-height: 4rem;
+            line-height: 3rem;
             font-weight: 700;
             text-align: right;
             cursor: pointer;
@@ -76,12 +76,14 @@ section#portfolio {
                p {
                   margin: 0 0 1rem;
                }
-
-               &.tech {
-                  margin-right: 2rem;
+            }
+            >ul {
+               margin: 0;
+               li {
+                  margin-bottom: 0.75em;
                }
             }
-         }         
+         }
       }
    }
 }

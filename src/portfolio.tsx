@@ -40,8 +40,8 @@ export default class extends React.PureComponent<Props, State> {
                : null
             }
             <div className="columns">
-               <div className="tech">{example.tech.map(t => <p>{t}</p>)}</div>
                <div>{example.summary.map(s => <p>{s}</p>)}</div>
+               <ul>{example.tech.map(t => <li>{t}</li>)}</ul>
             </div>
             { (example.site) ? <a className="site" href={example.site}>Visit Site</a> : null }
          </aside>;
@@ -50,6 +50,7 @@ export default class extends React.PureComponent<Props, State> {
       return <Section id="portfolio" className="inverted">
          <a href={resumeURL} className="resume">Resume</a>
          <h1>Portfolio</h1>
+         <p>Projects for which I was solely or primarily responsible. For more details, see each project repository's README.</p>
          <div className="showcase">
             <nav>
             { this.props.examples.map(e =>
