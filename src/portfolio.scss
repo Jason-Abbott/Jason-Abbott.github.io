@@ -5,6 +5,19 @@ section#portfolio {
    background-color: $backgroundColor;
    color: #fff;
 
+   .content {
+      position: relative;
+
+      a.resume {
+         top: -1rem;
+         width: 100%;
+         display: block;
+         text-align: center;
+         position: absolute;
+         text-transform: uppercase;
+      }
+   }
+
    .showcase {
       margin: 1rem 0;
       display: flex;
@@ -13,7 +26,7 @@ section#portfolio {
       nav {
          >div {
             width: 10rem;
-            line-height: 3rem;
+            line-height: 4rem;
             font-weight: 700;
             text-align: right;
             cursor: pointer;
@@ -24,15 +37,18 @@ section#portfolio {
                background-color: $titleColor;
             }
 
-            &:hover {
-               text-decoration: underline;
+            &:not(.selected) {
+               &:hover {
+                  text-decoration: underline;
+                  background-color: lighten($backgroundColor, 5%);
+               }
             }
          }
       }
 
       aside {
          border: 1px solid $titleColor;
-         padding: 1rem;
+         padding: 1rem 1.5rem;
 
          a { font-size: 1.3rem; float: right; }
 
@@ -45,10 +61,27 @@ section#portfolio {
             }
          }
 
-         p {
+         .columns {
             clear: both;
+            display: flex;
+            flex-direction: row;
+            align-content: flex-start;
             margin: 0.75rem 0;
-         }
+
+            >div {
+               h3 {
+                  margin: 0;
+                  padding: 0;
+               }
+               p {
+                  margin: 0 0 1rem;
+               }
+
+               &.tech {
+                  margin-right: 2rem;
+               }
+            }
+         }         
       }
    }
 }

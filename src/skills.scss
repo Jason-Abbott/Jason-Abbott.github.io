@@ -4,6 +4,7 @@
 section#skills .content {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
    flex-wrap: wrap;
 
    h1 {
@@ -16,15 +17,22 @@ section#skills .content {
    }
 
    .leadership {
-      flex-basis: 40%;
-      margin-left: 1rem;
+      flex-basis: 25%;
+      margin-left: 2rem;
+      h1, p { margin-bottom: 1rem; }
+      img.cpm {
+         float: right;
+         width: 10rem;
+         border: 1px solid $titleColor;
+         margin-left: 0.1rem;
+      }
    }
 
    .technical {
-      flex-basis: 55%;
+      flex-basis: 65%;
 
       table {
-         margin: 2rem 0;
+         margin: 1rem 0;
          border-collapse: collapse;
 
          tr {
@@ -124,5 +132,20 @@ section#skills .content {
             }
          }
       }
+   }
+
+   @include tablet {
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .leadership, .technical {
+         flex-basis: 100%;
+      }
+
+      .leadership {
+         margin-left: 0;
+         h1 { margin-bottom: 0; }
+      }
+      
    }
 }

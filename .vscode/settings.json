@@ -8,9 +8,6 @@
 
    "eslint.enable": false,
 
-   // so we can see what they are
-   "extensions.autoUpdate": false,
-
    "files.eol": "\n",
    "files.associations": {
       "*.lock": "yaml",
