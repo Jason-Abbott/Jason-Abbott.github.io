@@ -139,9 +139,8 @@ export const examples:Example[] = [
          "Compiled as single, native binary (any platform) with embedded web assets for super easy integration and management."
       ],
       summary: [
-         "An initiative to bring high performance, modern, responsive software solutions to businesses having policies averse to public cloud solutions.",
-         "Cloud platforms have left on-premise software little mindshare, often leaving it as decrepit (weirdly difficult to install, maintain and use) as it is overpriced.",
-         "Delivered as a single, proprietary binary from open source building blocks, the Toba solution will require little to no integration or operating expense."
+         "An initiative to bring high performance, responsive software solutions comprised of our own open-sourced building blocks to businesses having policies preventing public cloud solutions.",
+         "Cloud platforms have left little mindshare for on-premise solutions, allowing them to become as decrepit (weirdly difficult to install, maintain and use) as they are overpriced. We can do better."
       ]
    }, {
       name: "Trail Image",
@@ -162,7 +161,7 @@ export const examples:Example[] = [
       name: "Portfolio",
       repo: "https://github.com/Jason-Abbott/Jason-Abbott.github.io",
       summary: [
-         "You are looking at it! A bit over-engineered, yes, but still able to stand it up in a day using toolchains I'd already refined.",
+         "You are looking at it! Somewhat over-engineered, yes, but simple enough to stand up in a day using toolchains I'd already refined.",
          "Worth a mention only because it illustrates React and UX work I've done elsewhere but can't easily share."
       ],
       tech: [
@@ -181,7 +180,7 @@ export const examples:Example[] = [
          "Custom HTTP handlers for AJAX and generated image caching"
       ],
       summary: [
-         "Kiosk is an ASP.Net MVC intranet site created as the final project for the three-year Certified Public Manager program I went through (see Leadership Skills below).",
+         "Kiosk is an ASP.Net MVC intranet site created as the final project for the three-year Certified Public Manager program I completed (see Leadership Skills below).",
          "Its purpose is to surface diverse business metrics in the simple, consumable manner of a kiosk by integrating (but not duplicating) data from disparate systems and platforms."
       ]
    },
@@ -189,33 +188,39 @@ export const examples:Example[] = [
       name: "V.A.A.S.T",
       repo: "https://github.com/Jason-Abbott/vasst",
       tech: [
-         "Custom product promotion system leveraging interfaces, reflection and binary serialization to support arbtrary criteria and combinations.",
+         "Robust product promotion system leveraging interfaces, reflection and binary serialization to support arbitrary combinations of extensible criteria.",
          "Suite of custom HTML controls (with IntelliSense configured) use reflection to read the criteria and other classes to generate friendly, easily managed forms.",
-         "Low-level graphics code to generate and enhance image assets on-the-fly, cached in custom HTTP handlers."
+         "Low-level graphics code generates and enhances image assets on-the-fly, cached in custom HTTP handlers."
       ],
       summary: [
-         "Public ASP.Net site created to manage contests, file uploads, reviews, comments and rankings among video editors. The site is no longer active since the company's business has changed."
+         "All custom, public ASP.Net site created to manage contests, file uploads, reviews, comments and rankings among video editors. (The site is no longer active since the company's business has changed.)"
       ]
    }, {
       name: "Albertsons",
       repo: "https://github.com/Jason-Abbott/albertsons",
       summary: [
          "I was team lead for front-end e-commerce development in 2002 when we took the initiative to rewrite and redesign everything on the Albertsons shopping site from the stored procedures up.",
-         "I pitched the idea to our VP who agreed only if we would commit to being done in a month. A month! But we were motivated so I agreed. It took some long hours but our team pulled it off.",
-         "The result was hugely positive. The press and customers raved about the improvements. (Some of their quotes are in the respository README.)"
+         "I pitched the idea to our VP who agreed only if we would commit to being done in a month. A month! But we were motivated so I agreed. It took some long hours and follow-up releases but our team pulled it off.",
+         "The result was hugely positive. The press and customers raved about the improvements. Read many of their quotes are in the respository README."
       ],
       tech: [
-         "Innovative use (at the time) of Javascript and a hidden frame to display an always up-to-date, interactive cart.",
+         "Innovative use (at the time) of Javascript and hidden frames to display an always up-to-date, interactive cart.",
          "Greatly simplified (perhaps even made fun) delivery reservation screens.",
-         "Optimized data access layer and payment authorization flow to substantially speed up shopping."
+         "Javascript powered (novel at the time) navigation and search avoided slow, repeated page reloads.",
+         "Optimized data access layer and payment authorization flow to substantially speed up shopping.",
+         "Dedicated screens for vision impaired customers enabled them to shop on their own, and read nutrition facts, for the first time.",
+         "Purchase history and pharmaceutical analysis in the commerce pipeline flagged likely methamphetamine manufacterers (before laws put the constituent drugs behind the counter)."
       ]
    }, {
       name: "Benefit Payment Control",
       tech: [
-         "Gamified agent home screens by always displaying current closure rate relative to team average."
+         "Gamified agent home screens display current case closure rate relative to team average.",
+         "Statistician-developed models implemented as complex T-SQL stored procedures to generate leads from large state and federal datasets.",
+         "Widespread support for keyboard navigation accelerates agent work."
       ],
       summary: [
-         ""
+         "An internal case management system with potential unemployment fraud leads generated by continually updated statistical analyses. A trivial example would be a model flagging claims from a zip code in numbers nearing or exceeding the known population.",
+         "(The code was proprietary and confidential and the site internal so can only be described.)"
       ]
    }, {
       name: "webCal",
@@ -233,12 +238,12 @@ export const examples:Example[] = [
       name: "Nacscorp",
       repo: "https://github.com/Jason-Abbott/nacscorp",
       tech: [
-         "My first projects in the early 1990s were Perl on Unix followed by a decade on the Microsoft stack — IIS, Classic ASP, COM+, Commerce Server, SQL Server, ASP.Net and C#.",
-         "For the last seven years, my projects have all been platform agnostic, Node and Go with React or vanilla Javascript on the client."
+         "Perl processed mainframe flat files to display product catalog on a sign-in secured public site.",
+         "There were no commerce sites to compare or forums to consult at the time so all work was original and innovative."
       ],
       summary: [
-         "I back-filled GitHub with a smattering of old projects going back to the 1990s. (Ignore the commit dates. The real date is in the README or repo description.)",
-         "Several of them are simple websites. A couple are widgets I sold for several years, a calendar and tree navigation."
+         "This is an oldie. Working as the service manager in the computer department of a campus retailer afforded early access to high speed Internet. I used the opportunity to learn HTML, Perl and CGI (the tools of the time) to build a retail website.",
+         "That website caught the attention of our supplier who considered it the best they'd seen, so they brought me to their headquarters in Cleveland to build an online, searchable catalog of their entire product offering."
       ]
    }
 ];

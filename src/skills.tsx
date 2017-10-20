@@ -48,6 +48,7 @@ export const Skills = (props:Props) => <Section id="skills">
       <p>Most of my career has been in leadership positions, from team lead to supervisor, software development manager and enterprise-level architect.</p>
       <img className="cpm" src="./img/cpm.jpg"/>
       <p>As the development manager over a team of DBAs and a team of programmers, I was sponsored by the organization for the three-year <a href="https://en.wikipedia.org/wiki/Certified_Public_Manager">Certified Public Manager</a> program, which I completed in December, 2009.</p>
+      <p>I also hold certificates from Boise State University's Center for Professional Development in Project Management and Applied Leadership.</p>
       <p>As a leader in organizations that generate or utilize federal and personal health data, I've been responsible to ensure critical policy compliance and respond to audit findings.</p>
       <p>My favorite part of leadership is passing along what I've learned, seeing others grow.</p>
    </div>
