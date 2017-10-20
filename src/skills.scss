@@ -12,6 +12,10 @@ section#skills .content {
       white-space: nowrap;
    }
 
+   @include phone {
+      .leadership, .technical { flex-basis: 100%; }
+   }
+
    .leadership {
       flex-basis: 25%;
       margin-left: 2rem;
@@ -75,7 +79,7 @@ section#skills .content {
                      }
 
                      @include phone {
-                        p { font-size: 1rem; }
+                        p { font-size: 1rem; text-align: right; }
                         img { height: 1rem; }
                      }
                   }
