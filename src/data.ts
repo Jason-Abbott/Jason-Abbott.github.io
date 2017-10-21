@@ -13,7 +13,7 @@ export const platforms:Link[] = [
    { name: "facebook", url: "www.facebook.com/jason.e.abbott" },
    { name: "linkedin", url: "www.linkedin.com/in/jasonabbott/" },
    { name: "github", url: "github.com/Jason-Abbott" },
-   { name: "gitlab", url: "gitlab.com/toba-tech" },
+   { name: "gitlab", url: "gitlab.com/Jason-Abbott" },
    { name: "fivehundredpx", url: "500px.com/trailimage" }
 ];
 
