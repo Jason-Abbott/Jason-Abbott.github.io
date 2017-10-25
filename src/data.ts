@@ -74,6 +74,12 @@ export const skills:Skill[] = [
       level: 3,
       note: "Android."
    }, {
+      icons: ["firebase.svg"],
+      name: "Firebase",
+      years: 2,
+      level: 4,
+      note: "Cloud Messaging and I wrote a VSCode Firestore extension."
+   }, {
       icons: ["sql-server.svg", "postgres.svg", "MySQL.svg"],
       name: "SQL",
       years: 20,
