@@ -132,13 +132,14 @@ export const skills:Skill[] = [
       years: 2,
       level: 3,
       note: "Managed IAAS and PASS instances through RDP."
-   }, {
-      icons: ["sharepoint.svg"],
-      name: "SharePoint",
-      years: 5,
-      level: 4,
-      note: "Worked with and supervised implementation teams."
    }
+   // {
+   //    icons: ["sharepoint.svg"],
+   //    name: "SharePoint",
+   //    years: 5,
+   //    level: 4,
+   //    note: "Worked with and supervised implementation teams."
+   // }
 ];
 
 export const examples:Example[] = [
