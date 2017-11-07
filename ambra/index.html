@@ -5,51 +5,149 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link href="../favicon.ico" rel="icon"/>
       <script type="text/javascript">
+         // Usually I would create a normalized structure, with a recursive method
+         // to match-up relations, but the instructions said "each node should store
+         // the parent name and a list of children."
          var node = {
             children: [
                {
-                  
+                  name: "1",
+                  children: [
+                     {
+                        name: "1.1",
+                        children: [
+                           { name: "1.1.1" },
+                           { name: "1.1.2" },
+                           { name: "1.1.3" },
+                           { name: "1.1.4" }
+                        ]
+                     },
+                     {
+                        name: "1.2",
+                        children: [
+                           { name: "1.2.1" },
+                           { name: "1.2.2" },
+                           { name: "1.2.3" },
+                           { name: "1.2.4" }
+                        ]
+                     },
+                     {
+                        name: "1.3",
+                        children: [
+                           { name: "1.3.1" },
+                           { name: "1.3.2" },
+                           { name: "1.3.3" },
+                           { name: "1.3.4" }
+                        ]
+                     }
+                  ]
+               },
+               {
+                  name: "2",
+                  children: [
+                     {
+                        name: "2.1",
+                        children: [
+                           { name: "2.1.1" },
+                           { name: "2.1.2" },
+                           { name: "2.1.3" },
+                           { name: "2.1.4" }
+                        ]
+                     },
+                     {
+                        name: "2.2",
+                        children: [
+                           { name: "2.2.1" },
+                           { name: "2.2.2" },
+                           { name: "2.2.3" },
+                           { name: "2.2.4" }
+                        ]
+                     },
+                     {
+                        name: "2.3",
+                        children: [
+                           { name: "2.3.1" },
+                           { name: "2.3.2" },
+                           { name: "2.3.3" },
+                           { name: "2.3.4" }
+                        ]
+                     }
+                  ]
+               },
+               {
+                  name: "3",
+                  children: [
+                     {
+                        name: "3.1",
+                        children: [
+                           { name: "3.1.1" },
+                           { name: "3.1.2" },
+                           { name: "3.1.3" },
+                           { name: "3.1.4" }
+                        ]
+                     },
+                     {
+                        name: "3.2",
+                        children: [
+                           { name: "3.2.1" },
+                           { name: "3.2.2" },
+                           { name: "3.2.3" },
+                           { name: "3.2.4" }
+                        ]
+                     },
+                     {
+                        name: "3.3",
+                        children: [
+                           { name: "3.3.1" },
+                           { name: "3.3.2" },
+                           { name: "3.3.3" },
+                           { name: "3.3.4" }
+                        ]
+                     }
+                  ]
                }
             ]
          };
-         
 
+         document.addEventListener("DOMContentLoaded", function() {
+            addList(document.getElementsByTagName("body")[0], node.children, true);
+         });
 
-         var nodes = [
-            { name: "Mercury" },
-            { name: "Venus" },
-            { name: "Earth" },
-            { name: "Mars" },
-            { name: "Jupiter" },
-            { name: "Saturn" },
-            { name: "Uranus" },
-            { name: "Neptune" },
-            { name: "Pluto" },
-            { name: "Luna", orbits: "Earth" },
-            { name: "Deimos", orbits: "Mars" },
-            { name: "Phobos", orbits: "Mars" },
-            { name: "Ganymede", orbits: "Jupiter" },
-            { name: "Callisto", orbits: "Jupiter" },
-            { name: "Io", orbits: "Jupiter" },
-            { name: "Europa", orbits: "Jupiter" },
-            { name: "Titan", orbits: "Saturn" },
-            { name: "Rhea", orbits: "Saturn" },
-            { name: "Iapetus", orbits: "Saturn" },
-            { name: "Dione", orbits: "Saturn" },
-            { name: "Tethys", orbits: "Saturn" },
-            { name: "Enceladus", orbits: "Saturn" },
-            { name: "Titania", orbits: "Uranus" },
-            { name: "Oberon", orbits: "Uranus" },
-            { name: "Umbriel", orbits: "Uranus" },
-            { name: "Ariel", orbits: "Uranus" },
-            { name: "Triton", orbits: "Neptune" },
-            { name: "Proteus", orbits: "Neptune" },
-            { name: "Charon", orbits: "Pluto" },
-            { name: "Hydra", orbits: "Pluto" }
-         ]
+         function addList(parent, nodes, open) {
+            var ul = document.createElement("ul");
+
+            if (!open) { ul.className = "collapsed"; }
+            
+            for (var i = 0; i < nodes.length; i++) {
+               var n = nodes[i];
+               var li = document.createElement("li");
+               li.innerHTML = "<span>" + n.name + "</span>";
+               ul.appendChild(li);
+
+               if (n.children) {
+                  li.className = "parent";
+                  li.addEventListener("click", clickItem);
+                  addList(li, n.children);
+               }          
+            }
+            parent.appendChild(ul);
+         }
+
+         function clickItem(e) {
+            e.stopPropagation();
+            var el = e.target;
+            var list = (el.nodeName == "SPAN") ? el.nextSibling : el.children[1];
+            if (list === null || list === undefined) { return; }
+            list.className = list.className == "collapsed" ? "" : "collapsed";
+         }
+
       </script>
+      <style type="text/css">
+         li { font-size: 2rem; }
+         ul.collapsed { display: none; }
+         li.parent>span { cursor: pointer; }
+         li.parent>span:hover { color: blue; text-decoration: underline; }
+      </style>
    </head>
-   <body>
-
-   </body>
+   <body></body>
 </html>
