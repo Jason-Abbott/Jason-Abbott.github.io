@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 // Our intern left it incomplete and it should be doing an in-order traversal
@@ -21,15 +22,15 @@ func (t *tree) Walk() string {
 	if t == nil {
 		return ""
 	}
-	s := ""
+	out := ""
 	if t.Left != nil {
-		s += t.Left.Walk()
+		out += t.Left.Walk()
 	}
-	s += fmt.Sprint(t.Value)
+	out += strconv.Itoa(t.Value)
 	if t.Right != nil {
-		s += t.Right.Walk()
+		out += t.Right.Walk()
 	}
-	return s
+	return out
 }
 
 func insert(t *tree, v int) *tree {
