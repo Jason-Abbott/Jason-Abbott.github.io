@@ -152,8 +152,8 @@ export const examples:Example[] = [
          "Compiled as single, native binary (any platform) with embedded web assets for super easy integration and management."
       ],
       summary: [
-         "An initiative to bring high performance, responsive software solutions comprised of our own open-sourced building blocks to businesses having policies preventing public cloud solutions.",
-         "Cloud platforms have left little mindshare for on-premise solutions, allowing them to become as decrepit (weirdly difficult to install, maintain and use) as they are overpriced. We can do better."
+         "My personal incubator wherein I work to test and product-ize ideas. I was inspired by my time as a Solution Architect at a health system, seeing so much decrepit but critical software, to build an application framework that could be deployed as a single binary serving modern web clients.",
+         "I have also started working on a Go ÐApp using native Go contract bindings to build familiarity with blockchain. And I built  and released a VSCode language extension to work with the rules and schema files for Google’s new Firestore."
       ]
    }, {
       name: "Trail Image",
