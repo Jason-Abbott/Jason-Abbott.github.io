@@ -2,13 +2,13 @@
    "version": "2.0.0",
    "tasks": [
       {
-         "taskName": "Webpack",
+         "label": "Webpack",
          "command": "node_modules/.bin/webpack",
          "type": "shell",
          "problemMatcher": []
       },
       {
-         "taskName": "Webpack Watch",
+         "label": "Webpack Watch",
          "command": "node_modules/.bin/webpack --watch --display-error-details",
          "type": "shell",
          "group": "build",
