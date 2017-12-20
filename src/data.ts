@@ -10,7 +10,7 @@ const email = "znvygb:wbo@genvyvzntr.pbz";
 export const resumeURL = "https://docs.google.com/document/d/1uHO3CWC9mTSYAkh87I5BPbuCEu3ux4BONR3EeS6hahs/edit?usp=sharing";
 
 export const platforms:Link[] = [
-   //{ name: "facebook", url: "www.facebook.com/jason.e.abbott" },
+   { name: "facebook", url: "www.facebook.com/jason.e.abbott" },
    { name: "linkedin", url: "www.linkedin.com/in/jasonabbott/" },
    { name: "github", url: "github.com/Jason-Abbott" },
    { name: "gitlab", url: "gitlab.com/Jason-Abbott" },
