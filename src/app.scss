@@ -40,11 +40,18 @@ h1, h2, h3, h4, h5 {
    position: absolute;
    border-radius: $faceSize / 2;
    border: 6px solid #fff;
+   filter: grayscale(100%);
+   animation: 5s linear 0.5s forwards saturate;
 
    @include tablet {
       top: $navbarHeight * 1.5;
       width: $faceSize / 2;
    }
+}
+
+@keyframes saturate {
+   from { filter: grayscale(100%); }
+   to { filter: grayscale(0); }
 }
 
 #hero {

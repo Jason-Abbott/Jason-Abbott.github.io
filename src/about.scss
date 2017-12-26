@@ -1,7 +1,11 @@
 @import "config";
 
 section.about {
-   padding: 0;
+   padding: 2.5rem 0 0 0;
+
+   @include tablet {
+      padding-top: 0;
+   }
 
    .content {
       display: flex;

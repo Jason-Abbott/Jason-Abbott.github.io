@@ -34,7 +34,7 @@ export const Skills = (props:Props) => <Section id="skills">
                   <div>{s.icons.map(i => <img src={"./img/" + i}/>)}</div>
                </div>
             </td>
-            <td className="years">{s.years}</td>
+            <td className="years">{ageism(s.years)}</td>
             <td className="level">
                <ul>{ levels.map(l => <li className={s.level >= l ? "on" : null}/> )}</ul>
             </td>
@@ -53,5 +53,7 @@ export const Skills = (props:Props) => <Section id="skills">
       <p>My favorite part of leadership is passing along what I've learned, seeing others grow.</p>
    </div>
 </Section>;
+
+const ageism = (yrs:number):string => yrs > 10 ? "10+" : yrs.toString();
 
 export default Skills;

@@ -25,7 +25,7 @@ export const pageLinks:Link[] = [
 
 export const about:Item[] = [
    { title: "Dirtbike rider", __html: "I&rsquo;m still working on my wheelie but I&rsquo;ve mastered the wipe-out." },
-   { title: "Father of four", __html: "Three girls and a boy. It&rsquo;s safe again &mdash; two are now in other countries." },
+   //{ title: "Father of four", __html: "Three girls and a boy. It&rsquo;s safe again &mdash; two are now in other countries." },
    { title: "Mediocre travel writer", __html: "I have <a href=\"http://www.trailimage.com\">this blog</a>, you see &hellip;" },
    { title: "Keeper of a pond", __html: "Koi are demanding and blue heron are rude. I&rsquo;m not sure why I do it." },
    { title: "Photo enthusiast", __html: "I have prints in the garage left over from selling at the farmers market &hellip; five years ago." }
